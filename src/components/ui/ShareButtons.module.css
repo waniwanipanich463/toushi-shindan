@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid var(--color-border);
+    width: 100%;
+}
+
+.label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-text-light);
+    letter-spacing: 0.05em;
+}
+
+.buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 48px;
+    padding: 0 24px;
+    border-radius: 9999px;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 160px;
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.button:active {
+    transform: translateY(0);
+}
+
+.twitter {
+    background-color: #000;
+    /* X brand color */
+}
+
+.twitter:hover {
+    background-color: #333;
+}
+
+.line {
+    background-color: #06C755;
+    /* LINE brand color */
+}
+
+.line:hover {
+    background-color: #05b34c;
+}
+
+.icon {
+    display: block;
+}

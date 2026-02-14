@@ -1,0 +1,115 @@
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+    position: relative;
+}
+
+/* Connecting line */
+.options::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    height: 2px;
+    background-color: var(--color-border);
+    z-index: 0;
+}
+
+.option {
+    position: relative;
+    /* z-index requires position */
+    z-index: 1;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    /* Hit area */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.option:hover .circle {
+    border-color: var(--color-primary);
+}
+
+.circle {
+    display: block;
+    border-radius: 50%;
+    border: 2px solid var(--color-border);
+    background-color: var(--color-surface);
+    transition: all 0.2s ease;
+}
+
+/* Custom Colors */
+.negative .circle {
+    border-color: #e57373;
+}
+
+/* Red-ish */
+.positive .circle {
+    border-color: var(--color-secondary);
+}
+
+/* Teal */
+.neutral .circle {
+    border-color: var(--color-text-light);
+}
+
+.option.selected .circle {
+    background-color: currentColor;
+    transform: scale(1.2);
+}
+
+.negative.selected {
+    color: #e57373;
+}
+
+.positive.selected {
+    color: var(--color-secondary);
+}
+
+.neutral.selected {
+    color: var(--color-text-light);
+}
+
+
+/* Sizes */
+.lg .circle {
+    width: 32px;
+    height: 32px;
+}
+
+.md .circle {
+    width: 24px;
+    height: 24px;
+}
+
+.sm .circle {
+    width: 18px;
+    height: 18px;
+}
+
+.xs .circle {
+    width: 14px;
+    height: 14px;
+}
+
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    font-weight: 500;
+}

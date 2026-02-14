@@ -1,0 +1,86 @@
+/* ... existing styles ... */
+
+.characteristicsSection {
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.characteristicsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+    .characteristicsGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.strengthBox,
+.weaknessBox {
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+}
+
+.strengthBox {
+    background-color: #f0fdf4;
+    /* Light green */
+    border: 1px solid #bbf7d0;
+}
+
+.weaknessBox {
+    background-color: #fef2f2;
+    /* Light red */
+    border: 1px solid #fecaca;
+}
+
+.boxTitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.strengthBox .boxTitle {
+    color: #166534;
+    /* Dark green */
+}
+
+.weaknessBox .boxTitle {
+    color: #991b1b;
+    /* Dark red */
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    position: relative;
+    padding-left: 1.2em;
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+}
+
+.list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: currentColor;
+    font-weight: bold;
+}
+
+.icon {
+    display: inline-block;
+    /* Flex gap in parent handles spacing */
+}
