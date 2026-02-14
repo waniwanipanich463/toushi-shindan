@@ -224,3 +224,40 @@
     margin-right: 4px;
     margin-bottom: 2px;
 }
+
+@media (max-width: 480px) {
+    .main {
+        padding-top: var(--spacing-lg);
+        padding-bottom: var(--spacing-lg);
+    }
+
+    .header {
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .typeTitle {
+        font-size: 1.75rem;
+    }
+
+    .typeCode {
+        font-size: 1.25rem;
+    }
+
+    .sectionTitle {
+        font-size: 1.25rem;
+        margin-bottom: var(--spacing-md);
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+        width: 100%;
+    }
+
+    .portfolioItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+
+    .portfolioRatio {
+        align-self: flex-end;
+    }
+}

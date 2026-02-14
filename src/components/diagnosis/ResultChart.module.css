@@ -78,3 +78,30 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+
+@media (max-width: 480px) {
+    .chartContainer {
+        padding: var(--spacing-sm);
+    }
+
+    .axisRow {
+        font-size: 0.75rem;
+        /* Smaller font to fit */
+        margin-bottom: var(--spacing-md);
+    }
+
+    .barTrack {
+        height: 16px;
+        /* Thicker bar */
+        flex: 1.5;
+        /* Give more space to labels */
+        margin: 2px 0;
+    }
+
+    .labelL,
+    .labelR {
+        padding: 0 4px;
+        flex: 1;
+        font-size: 0.75rem;
+    }
+}
