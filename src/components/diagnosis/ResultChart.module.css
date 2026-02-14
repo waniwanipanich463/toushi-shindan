@@ -23,7 +23,8 @@
 .labelR {
     flex: 1;
     font-weight: 500;
-    color: var(--color-text-light);
+    color: var(--color-text);
+    /* Use main text color for better visibility */
 }
 
 .labelL {
