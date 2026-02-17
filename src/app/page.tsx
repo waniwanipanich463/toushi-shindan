@@ -57,7 +57,7 @@ export default function Home() {
               </div>
               <div className={styles.step}>
                 <div className={styles.stepIcon}>
-                  <span style={{ fontSize: '3rem' }}>🧠</span>
+                  <Image src="/images/icon_brain.png" alt="Type Determination" width={64} height={64} />
                 </div>
                 <span className={styles.stepNumber}>2</span>
                 <h3>タイプ判定</h3>
