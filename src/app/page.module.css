@@ -49,6 +49,7 @@
 .heroImage {
   max-width: 100%;
   height: auto;
+  mix-blend-mode: multiply;
 }
 
 .stepIcon {
@@ -57,6 +58,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.stepIcon img {
+  mix-blend-mode: multiply;
 }
 
 .subtitle {

@@ -33,26 +33,7 @@
   --transition-normal: 0.3s ease;
 }
 
-/* Dark Mode Support (Future-proofing) */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: #0D1626;
-    --color-surface: #1A2B4C;
-    --color-text: #F8F9FA;
-    --color-text-light: #B0B0B0;
-    --color-border: #2C3E50;
 
-    /* Dark Mode Overrides for Brand Colors */
-    --color-primary: #3B82F6;
-    /* Bright Blue */
-    --color-heading: #FFFFFF;
-
-    --color-secondary: #4FD1C5;
-    /* Lighter Teal */
-    --color-accent: #FFD700;
-    /* Brighter Amber/Gold */
-  }
-}
 
 * {
   box-sizing: border-box;
