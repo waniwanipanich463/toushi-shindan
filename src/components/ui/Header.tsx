@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Container } from './Container';
 import { Button } from './Button';
 import styles from './Header.module.css';
@@ -9,8 +10,16 @@ export const Header: React.FC = () => {
         <header className={styles.header}>
             <Container className={styles.container}>
                 <Link href="/" className={styles.logo}>
-                    <span className={styles.logoIcon}>📊</span>
-                    <span className={styles.logoText}>toushi-shindan</span>
+                    <div className={styles.logoImageWrapper}>
+                        <Image
+                            src="/images/logo_tsumugi.png"
+                            alt="つむぎの投資診断 ロゴ"
+                            width={40}
+                            height={40}
+                            className={styles.logoImage}
+                        />
+                    </div>
+                    <span className={styles.logoText}>つむぎの投資診断</span>
                 </Link>
 
                 <nav className={styles.nav}>
