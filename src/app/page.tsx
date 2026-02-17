@@ -13,7 +13,6 @@ export default function Home() {
         <MotionWrapper className={styles.heroContent}>
           <h1 className={styles.title}>
             <span className={styles.subtitle}>4軸×2＝16タイプで分析</span>
-            <br />
             あなたの<span className={styles.highlight}>投資スタイル</span>を診断
           </h1>
           <p className={styles.description}>
