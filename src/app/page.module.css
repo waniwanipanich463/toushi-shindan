@@ -84,8 +84,14 @@
 
 @media (max-width: 480px) {
   .title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    /* Slightly smaller base size */
   }
+}
+
+.titleMain {
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .highlight {

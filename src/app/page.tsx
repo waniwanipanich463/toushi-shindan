@@ -13,7 +13,7 @@ export default function Home() {
         <MotionWrapper className={styles.heroContent}>
           <h1 className={styles.title}>
             <span className={styles.subtitle}>4軸×2＝16タイプで分析</span>
-            あなたの<span className={styles.highlight}>投資スタイル</span>を診断
+            <span className={styles.titleMain}>あなたの<span className={styles.highlight}>投資スタイル</span>を診断</span>
           </h1>
           <p className={styles.description}>
             性格や価値観から、あなたに最適な投資手法（長期・積立・分散など）を提案します。
