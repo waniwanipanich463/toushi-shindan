@@ -14,6 +14,30 @@ import { MotionWrapper } from '@/components/ui/MotionWrapper';
 import charStyles from './characteristics.module.css';
 import styles from './page.module.css';
 
+const getSimulationParams = (typeCode: string) => {
+    // 診断タイプに応じた初期資産と目標資産の設定
+    const paramsMap: Record<string, { asset: number; target: number }> = {
+        'SILD': { asset: 1000000, target: 50000000 },  // 堅実な長期積立家: 100万 -> 5000万
+        'SILF': { asset: 5000000, target: 80000000 },  // 利回り追求の守備職人: 500万 -> 8000万
+        'SITD': { asset: 3000000, target: 40000000 },  // 短期ディフェンダー: 300万 -> 4000万
+        'SITF': { asset: 10000000, target: 50000000 }, // 要塞構築型: 1000万 -> 5000万
+        'SALD': { asset: 2000000, target: 100000000 }, // 銘柄分析の探求者: 200万 -> 1億
+        'SALF': { asset: 5000000, target: 150000000 }, // 集中投資の信奉者: 500万 -> 1.5億
+        'SATD': { asset: 1000000, target: 30000000 },  // 慎重なスイングトレーダー: 100万 -> 3000万
+        'SATF': { asset: 2000000, target: 150000000 }, // 一点突破の狙撃手: 200万 -> 1.5億
+        'GILD': { asset: 500000, target: 100000000 },  // 成長重視の積立投資家: 50万 -> 1億
+        'GILF': { asset: 3000000, target: 200000000 }, // セクターローテーション戦略家: 300万 -> 2億
+        'GITD': { asset: 1000000, target: 100000000 }, // モメンタムフォロワー: 100万 -> 1億
+        'GITF': { asset: 500000, target: 500000000 },  // テーマハイ・プリースト: 50万 -> 5億
+        'GALD': { asset: 2000000, target: 300000000 }, // アクティブ・ストックピッカー: 200万 -> 3億
+        'GALF': { asset: 1000000, target: 500000000 }, // グロース集中投資家: 100万 -> 5億
+        'GATD': { asset: 5000000, target: 100000000 }, // システムトレーダー: 500万 -> 1億
+        'GATF': { asset: 500000, target: 1000000000 }, // アグレッシブ・スペキュレーター: 50万 -> 10億
+    };
+
+    return paramsMap[typeCode] || { asset: 1000000, target: 100000000 };
+};
+
 function ResultContent() {
     const searchParams = useSearchParams();
 
@@ -157,7 +181,7 @@ function ResultContent() {
                 <MotionWrapper className={styles.actions} delay={1.0}>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%', maxWidth: '400px', margin: '0 auto' }}>
                         <a
-                            href={`https://asset-management-roadmap.vercel.app/simulate?mbti=${typeCode}&target=50000000&asset=1000000`}
+                            href={`https://asset-management-roadmap.vercel.app/simulate?mbti=${typeCode}&target=${getSimulationParams(typeCode).target}&asset=${getSimulationParams(typeCode).asset}`}
                             style={{ display: 'block', width: '100%', textDecoration: 'none' }}
                         >
                             <Button fullWidth style={{ padding: '16px', fontSize: '1.1rem', background: 'var(--color-secondary)', color: 'white', border: 'none', borderRadius: 'var(--radius-md)', cursor: 'pointer', fontWeight: 'bold', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
