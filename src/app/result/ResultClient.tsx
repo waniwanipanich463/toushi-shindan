@@ -155,12 +155,24 @@ function ResultContent() {
                 </MotionWrapper>
 
                 <MotionWrapper className={styles.actions} delay={1.0}>
-                    <Link href="/diagnosis">
-                        <Button variant="outline">もう一度診断する</Button>
-                    </Link>
-                    <Link href="/">
-                        <Button variant="ghost">トップへ戻る</Button>
-                    </Link>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%', maxWidth: '400px', margin: '0 auto' }}>
+                        <a
+                            href={`https://asset-management-roadmap.vercel.app/simulate?mbti=${typeCode}`}
+                            style={{ display: 'block', width: '100%', textDecoration: 'none' }}
+                        >
+                            <Button fullWidth style={{ padding: '16px', fontSize: '1.1rem', background: 'var(--color-secondary)', color: 'white', border: 'none', borderRadius: 'var(--radius-md)', cursor: 'pointer', fontWeight: 'bold', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+                                📈 資産形成シミュレーションを試す
+                            </Button>
+                        </a>
+                        <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
+                            <Link href="/diagnosis">
+                                <Button variant="outline">もう一度診断する</Button>
+                            </Link>
+                            <Link href="/">
+                                <Button variant="ghost">トップへ戻る</Button>
+                            </Link>
+                        </div>
+                    </div>
                 </MotionWrapper>
             </Container>
         </main>
