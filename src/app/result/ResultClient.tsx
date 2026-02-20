@@ -157,7 +157,7 @@ function ResultContent() {
                 <MotionWrapper className={styles.actions} delay={1.0}>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%', maxWidth: '400px', margin: '0 auto' }}>
                         <a
-                            href={`https://asset-management-roadmap.vercel.app/simulate?mbti=${typeCode}`}
+                            href={`https://asset-management-roadmap.vercel.app/simulate?mbti=${typeCode}&target=50000000&asset=1000000`}
                             style={{ display: 'block', width: '100%', textDecoration: 'none' }}
                         >
                             <Button fullWidth style={{ padding: '16px', fontSize: '1.1rem', background: 'var(--color-secondary)', color: 'white', border: 'none', borderRadius: 'var(--radius-md)', cursor: 'pointer', fontWeight: 'bold', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
