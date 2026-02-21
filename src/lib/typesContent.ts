@@ -87,7 +87,8 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             characterImage: "/images/characters/char_sitd.png",
             recommendedServices: [
                 { name: "DMM.com証券", description: "手数料が安く、ツールの動作が軽快。", url: "https://kabu.dmm.com/" },
-                { name: "住信SBIネット銀行", description: "待機資金を好金利で置いておけるハイブリッド預金。", url: "https://www.netbk.co.jp/" }
+                { name: "初心者向けFXスクール", description: "金融庁登録済みの安心安全なスクールで、投資の基礎を学べます。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+2Q8JLE+5J1A+5YZ76" rel="nofollow">FXを優しく基礎から！金融庁に登録済みのFXスクールだから安心安全です。【投資助言・代理業登録】</a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4AXGGG+2Q8JLE+5J1A+5YZ76" alt="">` },
+                { name: "TOSSY", description: "分散投資の管理に。詳しくはこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGF+GIS242+1WP2+1HM30Y" rel="nofollow">【PR】ウルトラ投資アプリ【TOSSY】 詳しくはこちら→</a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4AXGGF+GIS242+1WP2+1HM30Y" alt="">` }
             ],
             samplePortfolio: [
                 { name: "iシェアーズ 米国公益事業 ETF", ticker: "XLU", ratio: "20%" },
@@ -111,7 +112,8 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             characterImage: "/images/characters/char_sitf.png",
             recommendedServices: [
                 { name: "楽天銀行", description: "マネーブリッジ設定で普通預金金利がアップ。", url: "https://www.rakuten-bank.co.jp/" },
-                { name: "任意整理の相談", description: "今のうちに家計の健全化を。後悔しない任意整理なら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+1ELV76+4FR4+5YRHE" rel="nofollow">「後悔しない任意整理するなら！」</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AXGGG+1ELV76+4FR4+5YRHE" alt="">` }
+                { name: "任意整理の相談", description: "今のうちに家計の健全化を。後悔しない任意整理なら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+1ELV76+4FR4+5YRHE" rel="nofollow">「後悔しない任意整理するなら！」</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AXGGG+1ELV76+4FR4+5YRHE" alt="">` },
+                { name: "FXスクール", description: "リスク管理の基礎を学びたい方へ。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+2Q8JLE+5J1A+5YZ76" rel="nofollow">FXを優しく基礎から！金融庁に登録済みのFXスクールだから安心安全です。【投資助言・代理業登録】</a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4AXGGG+2Q8JLE+5J1A+5YZ76" alt="">` }
             ],
             samplePortfolio: [
                 { name: "生活必需品セレクト・セクター SPDR", ticker: "XLP", ratio: "20%" },
@@ -135,7 +137,8 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             characterImage: "/images/characters/char_sald.png",
             recommendedServices: [
                 { name: "マネックス証券", description: "銘柄スカウターが最強。過去10年の業績分析が可能。", url: "https://www.monex.co.jp/" },
-                { name: "バフェット・コード", description: "企業分析を効率化する必須ツール。", url: "https://www.buffett-code.com/" }
+                { name: "株式投資の情報源", description: "分析の精度を高めるための必須情報。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+DOZOY+ONS+TXW0I" rel="nofollow">あなたの株式投資が一変するかもしれない情報源</a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4AXGGG+DOZOY+ONS+TXW0I" alt="">` },
+                { name: "TOSSY", description: "ポートフォリオ管理に最適なアプリ。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGF+GIS242+1WP2+1HM30Y" rel="nofollow">【PR】ウルトラ投資アプリ【TOSSY】 詳しくはこちら→</a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4AXGGF+GIS242+1WP2+1HM30Y" alt="">` }
             ],
             samplePortfolio: [
                 { name: "コカ・コーラ", ticker: "KO", ratio: "15%" },
@@ -161,7 +164,8 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             characterImage: "/images/characters/char_salf.png",
             recommendedServices: [
                 { name: "SBI証券", description: "単元未満株（S株）で少額から調整可能。", url: "https://www.sbisec.co.jp/" },
-                { name: "四季報オンライン", description: "深い企業分析のためのデータベース。", url: "https://shikiho.toyokeizai.net/" }
+                { name: "DMM 株", description: "一点集中投資のリサーチに役立つツール。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" rel="nofollow">初心者も安心！サポート充実の【DMM 株】(PR)</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" alt="">` },
+                { name: "株式投資の情報源", description: "勝負銘柄を見極めるための羅針盤。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+DOZOY+ONS+TXW0I" rel="nofollow">あなたの株式投資が一変するかもしれない情報源</a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4AXGGG+DOZOY+ONS+TXW0I" alt="">` }
             ],
             samplePortfolio: [
                 { name: "アップル", ticker: "AAPL", ratio: "25%" },
@@ -211,7 +215,8 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             characterImage: "/images/characters/char_satf.png",
             recommendedServices: [
                 { name: "松井証券", description: "1日信用取引の手数料が無料などデイトレ向き。", url: "https://www.matsui.co.jp/" },
-                { name: "Kabutan", description: "決算速報やテーマ株の発掘に。", url: "https://kabutan.jp/" }
+                { name: "DMM FX", description: "短期取引のスピード感を。アカウント登録はこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGE+9OALO2+1WP2+6JC82" rel="nofollow">【PR】【DMM FX】アカウント登録のお申込みはこちら</a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4AXGGE+9OALO2+1WP2+6JC82" alt="">` },
+                { name: "FXTF", description: "短期トレーダーに選ばれるMT4。口座開設はこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+APTO2+48D0+68EPE" rel="nofollow">メタトレーダー4[MT4]で24時間取引可能!口座開設はFXTF</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AXGGG+APTO2+48D0+68EPE" alt="">` }
             ],
             samplePortfolio: [
                 { name: "レーザーテック", ticker: "6920 (短期)", ratio: "30%" },
@@ -237,7 +242,8 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             characterImage: "/images/characters/char_gild.png",
             recommendedServices: [
                 { name: "SBI証券", description: "クレカ積立（三井住友カード）でVポイントが貯まる。", url: "https://www.sbisec.co.jp/" },
-                { name: "DMM 株", description: "初心者も安心、サポート充実の証券会社。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" rel="nofollow">初心者も安心！サポート充実の【DMM 株】(PR)</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" alt="">` }
+                { name: "DMM 株", description: "成長株積立にも適した、サポート充実の証券会社。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" rel="nofollow">初心者も安心！サポート充実の【DMM 株】(PR)</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" alt="">` },
+                { name: "TOSSY", description: "成長の軌跡を管理する投資アプリ。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGF+GIS242+1WP2+1HM30Y" rel="nofollow">【PR】ウルトラ投資アプリ【TOSSY】 詳しくはこちら→</a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4AXGGF+GIS242+1WP2+1HM30Y" alt="">` }
             ],
             samplePortfolio: [
                 { name: "eMAXIS Slim 全世界株式", ticker: "オール・カントリー", ratio: "60%" },
@@ -261,8 +267,9 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             weaknesses: ["タイミングを誤ると高値掴み", "セクター全体が沈むリスク", "リバランスが難しい"],
             characterImage: "/images/characters/char_gilf.png",
             recommendedServices: [
-                { name: "マネックス証券", description: "米国株の取り扱い銘柄数が豊富。", url: "https://www.monex.co.jp/" },
-                { name: "Finviz", description: "セクター別のヒートマップが見やすい海外サイト。", url: "https://finviz.com/" }
+                { name: "サクソバンク証券", description: "セクター別ETFの取り扱いが豊富。口座開設はこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+RDYLU+5PC8+HV7V6" rel="nofollow">【サクソバンク証券】外国株式口座開設</a><img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4AXGGG+RDYLU+5PC8+HV7V6" alt="">` },
+                { name: "株式投資の情報源", description: "特定のセクターを見抜くための最良の情報源。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+DOZOY+ONS+TXW0I" rel="nofollow">あなたの株式投資が一変するかもしれない情報源</a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4AXGGG+DOZOY+ONS+TXW0I" alt="">` },
+                { name: "DMM FX", description: "セクターの影響を為替でヘッジ。アカウント登録はこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGE+9OALO2+1WP2+6JC82" rel="nofollow">【PR】【DMM FX】アカウント登録のお申込みはこちら</a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4AXGGE+9OALO2+1WP2+6JC82" alt="">` }
             ],
             samplePortfolio: [
                 { name: "情報技術セクターETF", ticker: "VGT", ratio: "30%" },
@@ -287,7 +294,8 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             characterImage: "/images/characters/char_gitd.png",
             recommendedServices: [
                 { name: "サクソバンク証券", description: "海外株式を扱うなら定番。口座開設はこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+RDYLU+5PC8+HV7V6" rel="nofollow">【サクソバンク証券】外国株式口座開設</a><img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4AXGGG+RDYLU+5PC8+HV7V6" alt="">` },
-                { name: "株式投資の情報源", description: "投資の質を劇的に変える情報収集ツール。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+DOZOY+ONS+TXW0I" rel="nofollow">あなたの株式投資が一変するかもしれない情報源</a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4AXGGG+DOZOY+ONS+TXW0I" alt="">` }
+                { name: "株式投資の情報源", description: "投資の質を劇的に変える情報収集ツール。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+DOZOY+ONS+TXW0I" rel="nofollow">あなたの株式投資が一変するかもしれない情報源</a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4AXGGG+DOZOY+ONS+TXW0I" alt="">` },
+                { name: "FXTF", description: "モメンタムを捉えるMT4取引。口座開設はこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+APTO2+48D0+68EPE" rel="nofollow">メタトレーダー4[MT4]で24時間取引可能!口座開設はFXTF</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AXGGG+APTO2+48D0+68EPE" alt="">` }
             ],
             samplePortfolio: [
                 { name: "ナスダック100 ETF", ticker: "QQQ", ratio: "40%" },
@@ -312,7 +320,8 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             characterImage: "/images/characters/char_gitf.png",
             recommendedServices: [
                 { name: "SBI証券", description: "テーマキラーなど、テーマ投資専用のツールがある。", url: "https://www.sbisec.co.jp/" },
-                { name: "Twitter (X)", description: "リアルタイムの市場センチメント確認用。", url: "https://twitter.com/" }
+                { name: "株式投資の情報源", description: "次代のテーマを先取りするための良質な情報。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+DOZOY+ONS+TXW0I" rel="nofollow">あなたの株式投資が一変するかもしれない情報源</a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4AXGGG+DOZOY+ONS+TXW0I" alt="">` },
+                { name: "DMM 株", description: "流行に敏感な投資に応えるスピーディーな取引。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" rel="nofollow">初心者も安心！サポート充実の【DMM 株】(PR)</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" alt="">` }
             ],
             samplePortfolio: [
                 { name: "グローバルX AI＆ビッグデータ", ticker: "AIQ", ratio: "30%" },
@@ -337,7 +346,8 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             characterImage: "/images/characters/char_gald.png",
             recommendedServices: [
                 { name: "マネックス証券", description: "米国株スカウターが中小型株の発掘に最強。", url: "https://www.monex.co.jp/" },
-                { name: "Seeking Alpha", description: "海外の良質な投資記事が読める（英語）。", url: "https://seekingalpha.com/" }
+                { name: "サクソバンク証券", description: "圧倒的な銘柄数で成長株を見つける。口座開設はこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+RDYLU+5PC8+HV7V6" rel="nofollow">【サクソバンク証券】外国株式口座開設</a><img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4AXGGG+RDYLU+5PC8+HV7V6" alt="">` },
+                { name: "株式投資の情報源", description: "未来を担う企業を見出すための専門知識。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+DOZOY+ONS+TXW0I" rel="nofollow">あなたの株式投資が一変するかもしれない情報源</a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4AXGGG+DOZOY+ONS+TXW0I" alt="">` }
             ],
             samplePortfolio: [
                 { name: "米国中型成長株", ticker: "Mid-Cap Growth", ratio: "40%" },
@@ -362,7 +372,8 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             characterImage: "/images/characters/char_galf.png",
             recommendedServices: [
                 { name: "SBI証券", description: "IPO銘柄の取り扱いも多い。", url: "https://www.sbisec.co.jp/" },
-                { name: "株探 (Kabutan) プレミアム", description: "成長株の発掘スピードが上がる。", url: "https://kabutan.jp/" }
+                { name: "DMM 株", description: "集中投資に耐えうる低コストと安定性。PR", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" rel="nofollow">初心者も安心！サポート充実の【DMM 株】(PR)</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" alt="">` },
+                { name: "株式投資の情報源", description: "一点集中を支える確かな根拠を提供します。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+DOZOY+ONS+TXW0I" rel="nofollow">あなたの株式投資が一変するかもしれない情報源</a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4AXGGG+DOZOY+ONS+TXW0I" alt="">` }
             ],
             samplePortfolio: [
                 { name: "エヌビディア", ticker: "NVDA", ratio: "40%" },
@@ -387,7 +398,8 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             characterImage: "/images/characters/char_gatd.png",
             recommendedServices: [
                 { name: "auカブコム証券", description: "API環境が充実しており、自動売買に最適。", url: "https://kabu.com/" },
-                { name: "TradingView", description: "Pineスクリプトでバックテストが可能。", url: "https://jp.tradingview.com/" }
+                { name: "FXTF", description: "システムトレードの世界標準MT4を提供。口座開設はこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+APTO2+48D0+68EPE" rel="nofollow">メタトレーダー4[MT4]で24時間取引可能!口座開設はFXTF</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AXGGG+APTO2+48D0+68EPE" alt="">` },
+                { name: "DMM FX", description: "ルールに基づいた為替戦略。アカウント登録はこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGE+9OALO2+1WP2+6JC82" rel="nofollow">【PR】【DMM FX】アカウント登録のお申込みはこちら</a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4AXGGE+9OALO2+1WP2+6JC82" alt="">` }
             ],
             samplePortfolio: [
                 { name: "日経225先物・オプション", ticker: "NI225", ratio: "50%" },
@@ -411,7 +423,8 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             characterImage: "/images/characters/char_gatf.png",
             recommendedServices: [
                 { name: "松井証券", description: "一日信用取引の手数料無料。デイトレード必須。", url: "https://www.matsui.co.jp/" },
-                { name: "DMM FX", description: "ハイボラリティな取引に。アカウント登録はこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGE+9OALO2+1WP2+6JC82" rel="nofollow">【PR】【DMM FX】アカウント登録のお申込みはこちら</a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4AXGGE+9OALO2+1WP2+6JC82" alt="">` }
+                { name: "DMM FX", description: "ボラティリティを制する短期決戦。アカウント登録はこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGE+9OALO2+1WP2+6JC82" rel="nofollow">【PR】【DMM FX】アカウント登録のお申込みはこちら</a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4AXGGE+9OALO2+1WP2+6JC82" alt="">` },
+                { name: "サクソバンク証券", description: "世界中の市場でアグレッシブに取引。口座開設はこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+RDYLU+5PC8+HV7V6" rel="nofollow">【サクソバンク証券】外国株式口座開設</a><img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4AXGGG+RDYLU+5PC8+HV7V6" alt="">` }
             ],
             samplePortfolio: [
                 { name: "ゲームストップ", ticker: "GME (例)", ratio: "30%" },
