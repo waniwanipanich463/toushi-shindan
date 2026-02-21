@@ -10,13 +10,13 @@ export const questions: Question[] = [
     // Safety (+) vs Growth (-)
     // Positive = Growth, Negative = Safety.
 
-    { id: "sg1", text: "一時的に損をするリスクがあっても、お金を大きく増やすことを狙いたい。", axis: "S_G", weight: 1 },
+    { id: "sg1", text: "一時的に損をするリスクがあっても、高いリターンを狙いたい。", axis: "S_G", weight: 1 },
     { id: "sg2", text: "手元の資産が一時的にでも減ることに強い不安を感じる。", axis: "S_G", weight: -1 },
     { id: "sg3", text: "「安定」よりも「成長（大きく増やすこと）」という言葉に惹かれる。", axis: "S_G", weight: 1 },
     { id: "sg4", text: "投資において最も大切なのは、とにかく「お金を減らさないこと」だ。", axis: "S_G", weight: -1 },
     { id: "sg5", text: "新しい投資のやり方や、話題になっている暗号資産（仮想通貨）などにも興味がある。", axis: "S_G", weight: 1 },
     { id: "sg6", text: "銀行預金のように、金額が確実に守られている状態が一番安心する。", axis: "S_G", weight: -1 },
-    { id: "sg7", text: "将来のため、今は多少のマイナスが出る可能性があっても資産を増やしたい。", axis: "S_G", weight: 1 },
+    { id: "sg7", text: "将来のために、今はリスクを取ってでも資産を増やしたい。", axis: "S_G", weight: 1 },
     { id: "sg8", text: "日々の価格の上がり下がりに、一喜一憂したくない。", axis: "S_G", weight: -1 },
     { id: "sg9", text: "自分の持っている資金以上の金額を動かす（レバレッジをかける）取引に抵抗がない。", axis: "S_G", weight: 1 },
     { id: "sg10", text: "急激に増やすより、コツコツと少しずつ積み上げていくのが自分に合っている。", axis: "S_G", weight: -1 },
@@ -27,11 +27,11 @@ export const questions: Question[] = [
     // Index (-) vs Active (+)
     // Positive = Active, Negative = Index.
 
-    { id: "ia1", text: "市場全体の平均的な成績を上回る結果を出したい。", axis: "I_A", weight: 1 },
+    { id: "ia1", text: "市場平均（インデックス）を上回るリターンを目指したい。", axis: "I_A", weight: 1 },
     { id: "ia2", text: "自分で投資先を選んだり、買うタイミングを考えたりするのは面倒だ。", axis: "I_A", weight: -1 },
     { id: "ia3", text: "企業のニュースを自分で調べて、どこに投資するか決めるのが好きだ。", axis: "I_A", weight: 1 },
     { id: "ia4", text: "プロや投資の仕組みに任せて、自分はほったらかしにしたい。", axis: "I_A", weight: -1 },
-    { id: "ia5", text: "ニュースを見て、「この業界や会社は伸びそうだ」と予想することがよくある。", axis: "I_A", weight: 1 },
+    { id: "ia5", text: "ニュースを見て、特定の業界や企業に投資アイデアが浮かぶ。", axis: "I_A", weight: 1 },
     { id: "ia6", text: "投資に関わる手数料の安さが、投資先を選ぶときの最も大事な基準だ。", axis: "I_A", weight: -1 },
     { id: "ia7", text: "みんなと同じ「平均点」の結果だけでは、物足りないと感じる。", axis: "I_A", weight: 1 },
     { id: "ia8", text: "「個人の努力で市場平均に勝ち続けるのは難しい」という考えに共感する。", axis: "I_A", weight: -1 },
@@ -45,15 +45,15 @@ export const questions: Question[] = [
     // Positive = Short/Trading, Negative = Long.
 
     { id: "lt1", text: "数ヶ月から数年の、比較的短い期間で利益を確定させたい。", axis: "L_T", weight: 1 },
-    { id: "lt2", text: "10年、20年といった長い将来を見据えた資産づくりをしたい。", axis: "L_T", weight: -1 },
+    { id: "lt2", text: "10年, 20年といった長い将来を見据えた資産づくりをしたい。", axis: "L_T", weight: -1 },
     { id: "lt3", text: "相場の状況に合わせて、タイミングよく売買を行いたい。", axis: "L_T", weight: 1 },
     { id: "lt4", text: "一度買ったら、基本的には売らずにずっと持ち続けたい。", axis: "L_T", weight: -1 },
     { id: "lt5", text: "1日や数日の短期間で売買を繰り返して利益を出す手法に興味がある。", axis: "L_T", weight: 1 },
     { id: "lt6", text: "時間をかけることで利益が利益を生む（複利の）効果をじっくり待ちたい。", axis: "L_T", weight: -1 },
-    { id: "lt7", text: "相場の良し悪しに合わせて、手元の現金の比率をこまめに変えたい。", axis: "L_T", weight: 1 },
+    { id: "lt7", text: "キャッシュ（現金）比率を相場に合わせてマメに変えたい。", axis: "L_T", weight: 1 },
     { id: "lt8", text: "数日間の大きな暴落も、数十年という長い目で見れば一時的なことだと思う。", axis: "L_T", weight: -1 },
-    { id: "lt9", text: "損が膨らむ前に早めに売る（損切りする）決断は、素早く行うべきだ。", axis: "L_T", weight: 1 },
-    { id: "lt10", text: "「買ってじっと持ち続けること」が、自分の投資の基本戦略だ。", axis: "L_T", weight: -1 },
+    { id: "lt9", text: "損が膨らむ前に早めに売却する決断は、素早く行うべきだ。", axis: "L_T", weight: 1 },
+    { id: "lt10", text: "「一度買ったらずっと持ち続けること」が、自分の投資の基本戦略だ。", axis: "L_T", weight: -1 },
     { id: "lt11", text: "毎日、自分の資産がいくらになっているかチェックしないと気が済まない。", axis: "L_T", weight: 1 },
     { id: "lt12", text: "老後の蓄えなど、遠い未来の資金作りが投資の主な目的だ。", axis: "L_T", weight: -1 },
 
@@ -63,14 +63,14 @@ export const questions: Question[] = [
 
     { id: "df1", text: "本当に自信のある少数の銘柄だけに、資金を集中させて勝負したい。", axis: "D_F", weight: 1 },
     { id: "df2", text: "リスクを避けるため、多くの投資先に資金を分散させることを徹底したい。", axis: "D_F", weight: -1 },
-    { id: "df3", text: "よく知らない多くの会社を持つより、自分が熟知している数社に絞りたい。", axis: "D_F", weight: 1 },
-    { id: "df4", text: "世界中の様々な資産（株、債券、不動産など）に幅広く分散して持ちたい。", axis: "D_F", weight: -1 },
+    { id: "df3", text: "よく知らない多くの銘柄を持つより、知っている数銘柄が良い。", axis: "D_F", weight: 1 },
+    { id: "df4", text: "世界中の様々な資産（株、債券、不動産など）に分散したい。", axis: "D_F", weight: -1 },
     { id: "df5", text: "「選んだものに集中すること」こそが、投資で成功する道だと思う。", axis: "D_F", weight: 1 },
-    { id: "df6", text: "どの国や通貨が将来強くなるかは予想できないので、全部持っておくのが無難だ。", axis: "D_F", weight: -1 },
+    { id: "df6", text: "どの国や通貨が強くなるかわからないので、全部持っておきたい。", axis: "D_F", weight: -1 },
     { id: "df7", text: "管理する銘柄の数は、自分の目で細かく追える範囲に絞りたい。", axis: "D_F", weight: 1 },
     { id: "df8", text: "特定の業界や国だけに投資が偏ってしまうリスクは、極力避けたい。", axis: "D_F", weight: -1 },
-    { id: "df9", text: "自分の詳しくて得意な分野（よく知る業界やサービス）だけで勝負したい。", axis: "D_F", weight: 1 },
-    { id: "df10", text: "全世界の企業に広く投資できる商品ひとつで、十分だと考えている。", axis: "D_F", weight: -1 },
+    { id: "df9", text: "自分の詳しくて得意な分野だけで勝負したい。", axis: "D_F", weight: 1 },
+    { id: "df10", text: "全世界の企業に広く投資できる「全世界株式」一本で十分だ。", axis: "D_F", weight: -1 },
     { id: "df11", text: "自分の資産の半分以上を、たった1つの投資先に注ぎ込んでも平気だ。", axis: "D_F", weight: 1 },
     { id: "df12", text: "値動きが正反対であったり、バラバラであったりする資産を上手く組み合わせたい。", axis: "D_F", weight: -1 },
 ];
