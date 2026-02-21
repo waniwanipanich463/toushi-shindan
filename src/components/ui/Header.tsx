@@ -23,12 +23,6 @@ export const Header: React.FC = () => {
                 </Link>
 
                 <nav className={styles.nav}>
-
-                    <Link href="/diagnosis">
-                        <Button size="sm" variant="primary">
-                            診断スタート
-                        </Button>
-                    </Link>
                 </nav>
             </Container>
         </header>

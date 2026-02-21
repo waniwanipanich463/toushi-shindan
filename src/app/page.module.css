@@ -82,6 +82,12 @@
   word-break: normal;
 }
 
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 480px) {
   .title {
     font-size: clamp(1.2rem, 5vw, 1.6rem);
@@ -162,10 +168,4 @@
   font-weight: bold;
   font-size: 1.25rem;
   margin-bottom: var(--spacing-md);
-}
-
-@media (max-width: 768px) {
-  .title {
-    font-size: 2rem;
-  }
 }
