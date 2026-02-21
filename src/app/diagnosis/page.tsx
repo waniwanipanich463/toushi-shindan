@@ -124,15 +124,7 @@ export default function DiagnosisPage() {
                         </div>
 
                         <div className={styles.actions}>
-                            <Button
-                                variant="ghost"
-                                onClick={handleBack}
-                                disabled={currentIndex === 0}
-                            >
-                                前へ
-                            </Button>
-
-                            {isLastQuestion ? (
+                            {isLastQuestion && (
                                 <Button
                                     onClick={handleComplete}
                                     disabled={isSubmitting}
@@ -141,7 +133,15 @@ export default function DiagnosisPage() {
                                 >
                                     診断結果を見る
                                 </Button>
-                            ) : null}
+                            )}
+
+                            <Button
+                                variant="ghost"
+                                onClick={handleBack}
+                                disabled={currentIndex === 0}
+                            >
+                                前へ
+                            </Button>
                         </div>
                     </motion.div>
                 </AnimatePresence>
