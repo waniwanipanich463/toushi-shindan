@@ -113,6 +113,9 @@
     color: var(--color-text-light);
     font-weight: 500;
     margin-top: var(--spacing-xs);
+    width: 100%;
+    /* optionsと同じ余白を持たせる */
+    padding: 0 10px;
 }
 
 .labels span {
