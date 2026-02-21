@@ -84,8 +84,9 @@
     }
 
     .questionText {
-        font-size: 1.75rem;
+        font-size: 1.1rem;
         margin-top: 0;
+        line-height: 1.6;
     }
 
     .scaleWrapper {
