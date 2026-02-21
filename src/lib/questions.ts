@@ -74,4 +74,3 @@ export const questions: Question[] = [
     { id: "df11", text: "自分の資産の半分以上を、たった1つの投資先に注ぎ込んでも平気だ。", axis: "D_F", weight: 1 },
     { id: "df12", text: "値動きが正反対であったり、バラバラであったりする資産を上手く組み合わせたい。", axis: "D_F", weight: -1 },
 ];
-];
