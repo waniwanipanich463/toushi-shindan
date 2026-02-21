@@ -84,14 +84,13 @@
 
 @media (max-width: 480px) {
   .title {
-    font-size: 1.6rem;
-    /* Slightly smaller base size */
+    font-size: clamp(1.2rem, 5vw, 1.6rem);
   }
 }
 
 .titleMain {
   display: inline-block;
-  white-space: normal;
+  white-space: nowrap;
 }
 
 .highlight {
