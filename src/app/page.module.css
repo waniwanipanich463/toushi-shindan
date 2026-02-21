@@ -91,7 +91,7 @@
 
 .titleMain {
   display: inline-block;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .highlight {
