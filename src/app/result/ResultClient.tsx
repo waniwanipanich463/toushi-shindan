@@ -161,12 +161,25 @@ function ResultContent() {
                     <div className={styles.servicesGrid}>
                         {content.recommendedServices.map((service, index) => (
                             <div key={index} className={styles.serviceCard}>
-                                <h4 className={styles.serviceName}>{service.name}</h4>
-                                <p className={styles.serviceDesc}>{service.description}</p>
-                                {service.url && (
-                                    <a href={service.url} target="_blank" rel="noopener noreferrer" className={styles.serviceLink}>
-                                        公式サイトを見る →
-                                    </a>
+                                {service.affiliateHtml ? (
+                                    <div className={styles.affiliateWrapper}>
+                                        <h4 className={styles.serviceName}>{service.name}</h4>
+                                        <p className={styles.serviceDesc}>{service.description}</p>
+                                        <div
+                                            className={styles.affiliateTag}
+                                            dangerouslySetInnerHTML={{ __html: service.affiliateHtml }}
+                                        />
+                                    </div>
+                                ) : (
+                                    <>
+                                        <h4 className={styles.serviceName}>{service.name}</h4>
+                                        <p className={styles.serviceDesc}>{service.description}</p>
+                                        {service.url && (
+                                            <a href={service.url} target="_blank" rel="noopener noreferrer" className={styles.serviceLink}>
+                                                公式サイトを見る →
+                                            </a>
+                                        )}
+                                    </>
                                 )}
                             </div>
                         ))}

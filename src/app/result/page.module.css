@@ -215,6 +215,32 @@
     text-decoration: underline;
 }
 
+.affiliateTag {
+    margin-top: var(--spacing-md);
+}
+
+.affiliateTag a {
+    display: inline-block;
+    background-color: var(--color-secondary);
+    color: #fff;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+    transition: background-color 0.2s;
+}
+
+.affiliateTag a:hover {
+    background-color: #0056b3;
+}
+
+.affiliateTag img {
+    display: none;
+    /* 1x1 tracking pixel should not take space but still loads */
+}
+
+
 /* Icons */
 .sectionIcon {
     vertical-align: middle;

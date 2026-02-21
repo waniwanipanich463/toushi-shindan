@@ -42,6 +42,7 @@ export interface InvestmentType {
     name: string;
     description: string;
     url?: string;
+    affiliateHtml?: string;
   }[];
   samplePortfolio: {
     name: string;
