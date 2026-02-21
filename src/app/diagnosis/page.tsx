@@ -134,16 +134,7 @@ export default function DiagnosisPage() {
                                 >
                                     診断結果を見る
                                 </Button>
-                            ) : (
-                                <Button
-                                    variant="outline"
-                                    onClick={handleNext}
-                                    disabled={!canProceed}
-                                    className={styles.nextButton}
-                                >
-                                    次へ
-                                </Button>
-                            )}
+                            ) : null}
                         </div>
                     </motion.div>
                 </AnimatePresence>

@@ -52,8 +52,8 @@ export const questions: Question[] = [
     { id: "lt6", text: "時間をかけることで利益が利益を生む（複利の）効果をじっくり待ちたい。", axis: "L_T", weight: -1 },
     { id: "lt7", text: "キャッシュ（現金）比率を相場に合わせてマメに変えたい。", axis: "L_T", weight: 1 },
     { id: "lt8", text: "数日間の大きな暴落も、数十年という長い目で見れば一時的なことだと思う。", axis: "L_T", weight: -1 },
-    { id: "lt9", text: "損が膨らむ前に早めに売却する決断は、素早く行うべきだ。", axis: "L_T", weight: 1 },
-    { id: "lt10", text: "「一度買ったらずっと持ち続けること」が、自分の投資の基本戦略だ。", axis: "L_T", weight: -1 },
+    { id: "lt9", text: "損が膨らむ前に早めに売却して、損失を最小限に抑えるべきだ。", axis: "L_T", weight: 1 },
+    { id: "lt10", text: "一度買ったらずっと持ち続けて、長期的な成長を待つのが自分の基本だ。", axis: "L_T", weight: -1 },
     { id: "lt11", text: "毎日、自分の資産がいくらになっているかチェックしないと気が済まない。", axis: "L_T", weight: 1 },
     { id: "lt12", text: "老後の蓄えなど、遠い未来の資金作りが投資の主な目的だ。", axis: "L_T", weight: -1 },
 
@@ -69,8 +69,8 @@ export const questions: Question[] = [
     { id: "df6", text: "どの国や通貨が強くなるかわからないので、全部持っておきたい。", axis: "D_F", weight: -1 },
     { id: "df7", text: "管理する銘柄の数は、自分の目で細かく追える範囲に絞りたい。", axis: "D_F", weight: 1 },
     { id: "df8", text: "特定の業界や国だけに投資が偏ってしまうリスクは、極力避けたい。", axis: "D_F", weight: -1 },
-    { id: "df9", text: "自分の詳しくて得意な分野だけで勝負したい。", axis: "D_F", weight: 1 },
-    { id: "df10", text: "全世界の企業に広く投資できる「全世界株式」一本で十分だ。", axis: "D_F", weight: -1 },
+    { id: "df9", text: "自分が仕組みをよく理解していて、自信を持って語れる分野だけで勝負したい。", axis: "D_F", weight: 1 },
+    { id: "df10", text: "世界中の何千もの会社に丸ごと投資できる仕組み一つで、十分だと考えている。", axis: "D_F", weight: -1 },
     { id: "df11", text: "自分の資産の半分以上を、たった1つの投資先に注ぎ込んでも平気だ。", axis: "D_F", weight: 1 },
     { id: "df12", text: "値動きが正反対であったり、バラバラであったりする資産を上手く組み合わせたい。", axis: "D_F", weight: -1 },
 ];
