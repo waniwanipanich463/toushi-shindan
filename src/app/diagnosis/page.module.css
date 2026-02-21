@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    container-type: inline-size;
 }
 
 .characterImageWrapper {
@@ -42,7 +43,7 @@
 }
 
 .questionText {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: min(1.5rem, 2.6cqw);
     font-weight: 700;
     text-align: center;
     color: var(--color-primary);
@@ -68,11 +69,11 @@
 
 @media (max-width: 640px) {
     .card {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-lg) var(--spacing-sm);
     }
 
     .questionText {
-        font-size: clamp(0.7rem, 3.5vw, 1.25rem);
+        font-size: min(1.25rem, 2.6cqw);
         white-space: nowrap;
     }
 }
