@@ -136,7 +136,7 @@ export default function DiagnosisPage() {
                             )}
 
                             <Button
-                                variant="ghost"
+                                variant="outline"
                                 onClick={handleBack}
                                 disabled={currentIndex === 0}
                             >
