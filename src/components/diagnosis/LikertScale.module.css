@@ -112,4 +112,22 @@
     font-size: 0.875rem;
     color: var(--color-text-light);
     font-weight: 500;
+    margin-top: var(--spacing-xs);
+}
+
+.labels span {
+    flex: 1;
+    text-align: center;
+}
+
+.labelNegative {
+    text-align: left !important;
+}
+
+.labelPositive {
+    text-align: right !important;
+}
+
+.labelNeutral {
+    text-align: center !important;
 }
