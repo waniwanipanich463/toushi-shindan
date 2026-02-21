@@ -107,7 +107,14 @@ export default function DiagnosisPage() {
                         transition={{ duration: 0.3 }}
                         className={styles.card}
                     >
-                        <h2 className={styles.questionText}>{currentQuestion.text}</h2>
+                        <h2 className={styles.questionText}>
+                            {currentQuestion.text.split('\n').map((line, i) => (
+                                <React.Fragment key={i}>
+                                    {line}
+                                    {i < currentQuestion.text.split('\n').length - 1 && <br />}
+                                </React.Fragment>
+                            ))}
+                        </h2>
 
                         <div className={styles.scaleWrapper}>
                             <LikertScale

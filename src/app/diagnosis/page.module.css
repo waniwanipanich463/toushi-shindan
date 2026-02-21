@@ -49,7 +49,7 @@
     color: var(--color-primary);
     margin-bottom: var(--spacing-2xl);
     line-height: 1.4;
-    white-space: pre-wrap;
+    white-space: pre-wrap !important;
 }
 
 .scaleWrapper {
@@ -67,13 +67,13 @@
     min-width: 120px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .card {
         padding: var(--spacing-lg) var(--spacing-sm);
     }
 
     .questionText {
         font-size: min(1.25rem, 2.6cqw);
-        white-space: pre-wrap;
+        white-space: pre-wrap !important;
     }
 }
