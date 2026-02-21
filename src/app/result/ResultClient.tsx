@@ -7,7 +7,6 @@ import Image from 'next/image';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { ResultChart } from '@/components/diagnosis/ResultChart';
-import { SubscriptionForm } from '@/components/diagnosis/SubscriptionForm';
 import { getTypeContent } from '@/lib/typesContent';
 import { ShareButtons } from '@/components/ui/ShareButtons';
 import { MotionWrapper } from '@/components/ui/MotionWrapper';
@@ -174,18 +173,25 @@ function ResultContent() {
                     </div>
                 </MotionWrapper>
 
-                <MotionWrapper delay={0.9}>
-                    <SubscriptionForm />
-                </MotionWrapper>
-
-                <MotionWrapper className={styles.actions} delay={1.0}>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%', maxWidth: '400px', margin: '0 auto' }}>
+                <MotionWrapper className={styles.actions} delay={0.9}>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', width: '100%', maxWidth: '480px', margin: '2rem auto 0' }}>
                         <a
                             href={`https://asset-management-roadmap.vercel.app/simulate?mbti=${typeCode}&target=${getSimulationParams(typeCode).target}&asset=${getSimulationParams(typeCode).asset}`}
                             style={{ display: 'block', width: '100%', textDecoration: 'none' }}
                         >
-                            <Button fullWidth style={{ padding: '16px', fontSize: '1.1rem', background: 'var(--color-secondary)', color: 'white', border: 'none', borderRadius: 'var(--radius-md)', cursor: 'pointer', fontWeight: 'bold', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
-                                📈 資産形成シミュレーションを試す
+                            <Button fullWidth style={{
+                                padding: '20px',
+                                fontSize: '1.25rem',
+                                background: 'linear-gradient(135deg, var(--color-secondary), #0056b3)',
+                                color: 'white',
+                                border: 'none',
+                                borderRadius: 'var(--radius-lg)',
+                                cursor: 'pointer',
+                                fontWeight: 'bold',
+                                boxShadow: '0 8px 24px rgba(0,0,0,0.2)',
+                                transition: 'all 0.3s ease'
+                            }}>
+                                📈 診断結果をもとに資産形成シミュレーションを試す
                             </Button>
                         </a>
                         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
