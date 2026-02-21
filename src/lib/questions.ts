@@ -38,7 +38,7 @@ export const questions: Question[] = [
     { id: "ia9", text: "会社の業績や、価格の流れを示すグラフ（チャート）を分析する時間は苦にならない。", axis: "I_A", weight: 1 },
     { id: "ia10", text: "毎月決まった額を自動で積み立てる設定をしたら、あとは忘れていたい。", axis: "I_A", weight: -1 },
     { id: "ia11", text: "株価が10倍に跳ね上がるような「大化け株」を見つけるのが夢だ。", axis: "I_A", weight: 1 },
-    { id: "ia12", text: "世界中の株式に丸ごと投資するような、平均的な指数に連動する仕組みが一番堅実だと思う。", axis: "I_A", weight: -1 },
+    { id: "ia12", text: "世界中の株式に丸ごと投資するような、\n平均的な指数に連動する仕組みが一番堅実だと思う。", axis: "I_A", weight: -1 },
 
     // --- L/T: Long vs Short (12 questions) ---
     // Long (-) vs Short (+)
