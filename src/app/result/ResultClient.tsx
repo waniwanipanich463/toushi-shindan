@@ -171,9 +171,6 @@ function ResultContent() {
 
                 <MotionWrapper className={styles.actions} delay={0.9}>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', width: '100%', maxWidth: '600px', margin: '3rem auto 0' }}>
-                        <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', textAlign: 'center', marginBottom: '1rem', lineHeight: '1.6' }}>
-                            本サービスは投資判断の参考情報を提供するものであり、特定の金融商品の売買を例示・勧誘するものではありません。
-                        </div>
                         <a
                             href={`https://asset-management-roadmap.vercel.app/simulate?mbti=${typeCode}&target=${getSimulationParams(typeCode).target}&asset=${getSimulationParams(typeCode).asset}`}
                             style={{

@@ -46,6 +46,10 @@
     mix-blend-mode: multiply;
 }
 
+.chartSection {
+    margin-bottom: var(--spacing-3xl);
+}
+
 .adviceSection {
     margin-bottom: var(--spacing-3xl);
     padding: var(--spacing-xl) var(--spacing-lg);
@@ -126,6 +130,7 @@
     justify-content: center;
     gap: var(--spacing-md);
     margin-top: var(--spacing-3xl);
+    margin-bottom: var(--spacing-3xl);
 }
 
 /* Portfolio Section */
