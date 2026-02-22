@@ -82,7 +82,7 @@ function ResultContent() {
                     <div className={charStyles.characteristicsGrid}>
                         <div className={charStyles.strengthBox}>
                             <h4 className={charStyles.boxTitle}>
-                                <Image src="/images/icons/strength.png" alt="Strength" width={24} height={24} className={charStyles.icon} /> 強み
+                                強み
                             </h4>
                             <ul className={charStyles.list}>
                                 {content.strengths.map((s, i) => (
@@ -92,7 +92,7 @@ function ResultContent() {
                         </div>
                         <div className={charStyles.weaknessBox}>
                             <h4 className={charStyles.boxTitle}>
-                                <Image src="/images/icons/weakness.png" alt="Weakness" width={24} height={24} className={charStyles.icon} /> 弱み・注意点
+                                弱み・注意点
                             </h4>
                             <ul className={charStyles.list}>
                                 {content.weaknesses.map((w, i) => (
@@ -104,10 +104,10 @@ function ResultContent() {
                 </MotionWrapper>
 
                 <MotionWrapper className={styles.adviceSection} delay={0.6}>
-                    <h3 className={styles.sectionTitle}>投資アドバイス</h3>
+                    <h3 className={styles.sectionTitle}>診断結果の解説</h3>
                     <div className={styles.adviceGrid}>
                         <div className={styles.adviceCard}>
-                            <h4>推奨ポートフォリオ</h4>
+                            <h4>想定資産配分</h4>
                             <p className={styles.highlight}>{content.advice.allocation}</p>
                         </div>
                         <div className={styles.adviceCard}>
@@ -119,7 +119,7 @@ function ResultContent() {
                             <p>{content.advice.management}</p>
                         </div>
                         <div className={styles.adviceCard}>
-                            <h4>おすすめ商品例</h4>
+                            <h4>該当しやすい資産カテゴリー例</h4>
                             <ul className={styles.productList}>
                                 {content.advice.products.map((p, i) => (
                                     <li key={i}>{p}</li>
@@ -135,23 +135,6 @@ function ResultContent() {
                         <p>{content.advice.caution}</p>
                     </div>
                     <ShareButtons typeCode={typeCode} typeName={content.name} />
-                </MotionWrapper>
-
-                <MotionWrapper className={styles.portfolioSection} delay={0.7}>
-                    <h3 className={styles.sectionTitle}>
-                        <Image src="/images/icons/portfolio.png" alt="Portfolio" width={28} height={28} className={styles.sectionIcon} /> サンプルポートフォリオ
-                    </h3>
-                    <div className={styles.portfolioContainer}>
-                        {content.samplePortfolio.map((item, index) => (
-                            <div key={index} className={styles.portfolioItem}>
-                                <div className={styles.portfolioName}>
-                                    <span className={styles.ticker}>{item.ticker}</span>
-                                    <span className={styles.itemName}>{item.name}</span>
-                                </div>
-                                <div className={styles.portfolioRatio}>{item.ratio}</div>
-                            </div>
-                        ))}
-                    </div>
                 </MotionWrapper>
 
                 <MotionWrapper className={styles.servicesSection} delay={0.8}>
@@ -187,29 +170,38 @@ function ResultContent() {
                 </MotionWrapper>
 
                 <MotionWrapper className={styles.actions} delay={0.9}>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', width: '100%', maxWidth: '480px', margin: '2rem auto 0' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', width: '100%', maxWidth: '600px', margin: '3rem auto 0' }}>
+                        <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', textAlign: 'center', marginBottom: '1rem', lineHeight: '1.6' }}>
+                            本サービスは投資判断の参考情報を提供するものであり、特定の金融商品の売買を例示・勧誘するものではありません。
+                        </div>
                         <a
                             href={`https://asset-management-roadmap.vercel.app/simulate?mbti=${typeCode}&target=${getSimulationParams(typeCode).target}&asset=${getSimulationParams(typeCode).asset}`}
-                            style={{ display: 'block', width: '100%', textDecoration: 'none' }}
+                            style={{
+                                display: 'block',
+                                width: '100%',
+                                textDecoration: 'none',
+                                transition: 'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
+                            }}
+                            className={styles.bannerLink}
                         >
-                            <Button fullWidth style={{
-                                padding: '20px',
-                                fontSize: '1.25rem',
-                                background: 'linear-gradient(135deg, var(--color-secondary), #0056b3)',
-                                color: 'white',
-                                border: 'none',
-                                borderRadius: 'var(--radius-lg)',
-                                cursor: 'pointer',
-                                fontWeight: 'bold',
-                                boxShadow: '0 8px 24px rgba(0,0,0,0.2)',
-                                transition: 'all 0.3s ease'
-                            }}>
-                                📈 診断結果をもとに資産形成シミュレーションを試す
-                            </Button>
+                            <div className={styles.bannerWrapper}>
+                                <Image
+                                    src="/images/banner_simulation.png"
+                                    alt="診断結果をもとに資産形成シミュレーションを試す"
+                                    width={1000}
+                                    height={250}
+                                    layout="responsive"
+                                    className={styles.simulationBanner}
+                                    priority
+                                />
+                            </div>
                         </a>
                         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
                             <Link href="/diagnosis">
                                 <Button variant="outline">もう一度診断する</Button>
+                            </Link>
+                            <Link href="/results">
+                                <Button variant="outline">他の結果も見る</Button>
                             </Link>
                             <Link href="/">
                                 <Button variant="ghost">トップへ戻る</Button>
@@ -218,7 +210,7 @@ function ResultContent() {
                     </div>
                 </MotionWrapper>
             </Container>
-        </main>
+        </main >
     );
 }
 

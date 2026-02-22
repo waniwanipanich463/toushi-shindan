@@ -17,7 +17,7 @@ export default function Home() {
           </h1>
           <p className={styles.description}>
             性格や価値観から、あなたに最適な投資手法（長期・積立・分散など）を提案します。
-            特定銘柄の推奨ではなく、自分を知るためのツールです。
+            特定銘柄の例示ではなく、自分を知るためのツールです。
           </p>
 
           <div className={styles.actions}>
@@ -31,10 +31,10 @@ export default function Home() {
         </MotionWrapper>
         <MotionWrapper className={styles.heroImageWrapper} delay={0.2}>
           <Image
-            src="/images/hero.png"
+            src="/images/hero_new.png"
             alt="Investment Analysis"
-            width={400}
-            height={400}
+            width={600}
+            height={600}
             priority
             className={styles.heroImage}
           />
@@ -48,7 +48,7 @@ export default function Home() {
             <div className={styles.steps}>
               <div className={styles.step}>
                 <div className={styles.stepIcon}>
-                  <Image src="/images/icon_qa.png" alt="QA" width={64} height={64} />
+                  <Image src="/images/step_1.png" alt="QA" width={64} height={64} />
                 </div>
                 <span className={styles.stepNumber}>1</span>
                 <h3>48問の質問に回答</h3>
@@ -56,7 +56,7 @@ export default function Home() {
               </div>
               <div className={styles.step}>
                 <div className={styles.stepIcon}>
-                  <Image src="/images/icon_brain.png" alt="Type Determination" width={64} height={64} />
+                  <Image src="/images/step_2.png" alt="Type Determination" width={64} height={64} />
                 </div>
                 <span className={styles.stepNumber}>2</span>
                 <h3>タイプ判定</h3>
@@ -64,11 +64,11 @@ export default function Home() {
               </div>
               <div className={styles.step}>
                 <div className={styles.stepIcon}>
-                  <Image src="/images/icon_chart.png" alt="Chart" width={64} height={64} />
+                  <Image src="/images/step_3.png" alt="Chart" width={64} height={64} />
                 </div>
                 <span className={styles.stepNumber}>3</span>
-                <h3>アドバイス</h3>
-                <p>あなたに合った戦略を提案</p>
+                <h3>診断結果の解説</h3>
+                <p>あなたに合った特徴を解説</p>
               </div>
             </div>
           </MotionWrapper>

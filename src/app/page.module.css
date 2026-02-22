@@ -49,19 +49,23 @@
 .heroImage {
   max-width: 100%;
   height: auto;
-  mix-blend-mode: multiply;
+  background-color: #fff;
 }
 
 .stepIcon {
   margin-bottom: var(--spacing-md);
-  height: 64px;
+  height: 80px;
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.stepIcon img {
-  mix-blend-mode: multiply;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+  overflow: hidden;
+  padding: 8px;
 }
 
 .subtitle {

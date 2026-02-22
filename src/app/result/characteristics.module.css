@@ -2,10 +2,25 @@
 
 .characteristicsSection {
     margin-bottom: var(--spacing-xl);
-    padding: var(--spacing-lg);
-    background: white;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background-image: url('/images/bg_characteristics.png');
+    background-size: cover;
+    background-position: center;
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.characteristicsSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
 }
 
 .characteristicsGrid {
@@ -13,6 +28,8 @@
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
     margin-top: var(--spacing-md);
+    position: relative;
+    z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -23,39 +40,41 @@
 
 .strengthBox,
 .weaknessBox {
-    padding: var(--spacing-md);
-    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .strengthBox {
-    background-color: #f0fdf4;
-    /* Light green */
-    border: 1px solid #bbf7d0;
+    background-color: rgba(240, 253, 244, 0.85);
+    /* Semi-transparent light green */
+    border: 1px solid rgba(187, 247, 208, 0.5);
 }
 
 .weaknessBox {
-    background-color: #fef2f2;
-    /* Light red */
-    border: 1px solid #fecaca;
+    background-color: rgba(254, 242, 242, 0.85);
+    /* Semi-transparent light red */
+    border: 1px solid rgba(254, 202, 202, 0.5);
 }
 
 .boxTitle {
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: var(--spacing-sm);
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: var(--spacing-md);
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
 .strengthBox .boxTitle {
-    color: #166534;
-    /* Dark green */
+    color: #15803d;
+    /* Slightly darker green for better contrast */
 }
 
 .weaknessBox .boxTitle {
-    color: #991b1b;
-    /* Dark red */
+    color: #b91c1c;
+    /* Slightly darker red for better contrast */
 }
 
 .list {

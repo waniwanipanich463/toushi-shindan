@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
                 <Link href="/" className={styles.logo}>
                     <div className={styles.logoImageWrapper}>
                         <Image
-                            src="/images/logo_icon.png"
+                            src="/images/icons/char_icon.png"
                             alt="つむぎの投資診断 ロゴ"
                             width={40}
                             height={40}
