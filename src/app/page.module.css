@@ -127,14 +127,14 @@
 .ctaImageContainer {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 480px;
   aspect-ratio: 1024 / 434;
   cursor: pointer;
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .ctaImageContainer:hover {
-  transform: scale(1.03);
+  transform: scale(1.08);
 }
 
 .ctaImageDefault,
