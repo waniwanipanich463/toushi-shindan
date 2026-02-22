@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { MotionWrapper } from '@/components/ui/MotionWrapper';
+import { DissolveText } from '@/components/ui/DissolveText';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -13,7 +14,13 @@ export default function Home() {
         <MotionWrapper className={styles.heroContent}>
           <h1 className={styles.title}>
             <span className={styles.subtitle}>4軸×2＝16タイプで分析</span>
-            <span className={styles.titleMain}>あなたの<span className={styles.highlight}>投資スタイル</span>を診断</span>
+            <span className={styles.titleMain}>
+              <DissolveText text="あなたの" delay={0.5} />
+              <span className={styles.highlight}>
+                <DissolveText text="投資スタイル" delay={0.9} />
+              </span>
+              <DissolveText text="を診断" delay={1.5} />
+            </span>
           </h1>
           <p className={styles.description}>
             性格や価値観から、あなたに最適な投資手法（長期・積立・分散など）を提案します。

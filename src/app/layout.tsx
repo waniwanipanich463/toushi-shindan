@@ -29,8 +29,7 @@ export const metadata: Metadata = {
 
 import { Header } from "@/components/ui/Header";
 import { Footer } from "@/components/ui/Footer";
-
-// ... (imports)
+import { ClientLoadingWrapper } from "@/components/ui/ClientLoadingWrapper";
 
 export default function RootLayout({
   children,
@@ -40,9 +39,11 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={`${notoSansJP.variable} ${inter.variable} antialiased`}>
-        <Header />
-        {children}
-        <Footer />
+        <ClientLoadingWrapper>
+          <Header />
+          {children}
+          <Footer />
+        </ClientLoadingWrapper>
       </body>
     </html>
   );

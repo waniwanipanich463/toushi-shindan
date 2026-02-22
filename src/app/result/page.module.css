@@ -7,7 +7,7 @@
 
 .header {
     text-align: center;
-    margin-bottom: var(--spacing-2xl);
+    margin-bottom: var(--spacing-3xl);
 }
 
 .titlePrefix {
@@ -47,7 +47,7 @@
 }
 
 .adviceSection {
-    margin-bottom: var(--spacing-2xl);
+    margin-bottom: var(--spacing-3xl);
     padding: var(--spacing-xl) var(--spacing-lg);
     background-image: url('/images/bg_advice.png');
     background-size: cover;
@@ -55,6 +55,19 @@
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     position: relative;
+    overflow: hidden;
+}
+
+.adviceSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+    z-index: 0;
 }
 
 .adviceGrid {
@@ -112,12 +125,12 @@
     display: flex;
     justify-content: center;
     gap: var(--spacing-md);
-    margin-top: var(--spacing-2xl);
+    margin-top: var(--spacing-3xl);
 }
 
 /* Portfolio Section */
 .portfolioSection {
-    margin-bottom: var(--spacing-2xl);
+    margin-bottom: var(--spacing-3xl);
 }
 
 .portfolioContainer {
@@ -192,7 +205,7 @@
 
 /* Services Section */
 .servicesSection {
-    margin-bottom: var(--spacing-2xl);
+    margin-bottom: var(--spacing-3xl);
     padding: var(--spacing-xl) var(--spacing-lg);
     background-image: url('/images/bg_services.png');
     background-size: cover;
@@ -200,6 +213,19 @@
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     position: relative;
+    overflow: hidden;
+}
+
+.servicesSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+    z-index: 0;
 }
 
 .servicesGrid {

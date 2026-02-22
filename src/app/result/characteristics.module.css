@@ -1,7 +1,7 @@
 /* ... existing styles ... */
 
 .characteristicsSection {
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-3xl);
     padding: var(--spacing-xl) var(--spacing-lg);
     background-image: url('/images/bg_characteristics.png');
     background-size: cover;
@@ -19,7 +19,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.3);
     pointer-events: none;
 }
 
