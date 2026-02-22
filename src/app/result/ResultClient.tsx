@@ -139,7 +139,7 @@ function ResultContent() {
 
                 <MotionWrapper className={styles.servicesSection} delay={0.8}>
                     <h3 className={styles.sectionTitle}>
-                        <Image src="/images/icons/services.png" alt="Services" width={28} height={28} className={styles.sectionIcon} /> おすすめのサービス
+                        おすすめのサービス
                     </h3>
                     <div className={styles.servicesGrid}>
                         {content.recommendedServices.map((service, index) => (

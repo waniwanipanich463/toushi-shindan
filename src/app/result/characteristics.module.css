@@ -42,20 +42,20 @@
 .weaknessBox {
     padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
 .strengthBox {
-    background-color: rgba(240, 253, 244, 0.85);
+    background-color: rgba(240, 253, 244, 0.9);
     /* Semi-transparent light green */
-    border: 1px solid rgba(187, 247, 208, 0.5);
+    border: 1px solid rgba(187, 247, 208, 0.6);
 }
 
 .weaknessBox {
-    background-color: rgba(254, 242, 242, 0.85);
+    background-color: rgba(254, 242, 242, 0.9);
     /* Semi-transparent light red */
-    border: 1px solid rgba(254, 202, 202, 0.5);
+    border: 1px solid rgba(254, 202, 202, 0.6);
 }
 
 .boxTitle {
