@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 type Props = {
     text: string;
@@ -12,7 +12,7 @@ type Props = {
 export const DissolveText: React.FC<Props> = ({ text, className, delay = 0 }) => {
     const characters = Array.from(text);
 
-    const container = {
+    const container: Variants = {
         hidden: { opacity: 0 },
         visible: (i: number = 1) => ({
             opacity: 1,
@@ -20,7 +20,7 @@ export const DissolveText: React.FC<Props> = ({ text, className, delay = 0 }) =>
         }),
     };
 
-    const child = {
+    const child: Variants = {
         visible: {
             opacity: 1,
             y: 0,
@@ -29,7 +29,7 @@ export const DissolveText: React.FC<Props> = ({ text, className, delay = 0 }) =>
                 type: 'spring',
                 damping: 12,
                 stiffness: 100,
-            },
+            } as any,
         },
         hidden: {
             opacity: 0,
@@ -39,7 +39,7 @@ export const DissolveText: React.FC<Props> = ({ text, className, delay = 0 }) =>
                 type: 'spring',
                 damping: 12,
                 stiffness: 100,
-            },
+            } as any,
         },
     };
 
