@@ -30,7 +30,7 @@ export default function Home() {
             <Link href="/diagnosis" style={{ width: '100%', display: 'flex', justifyContent: 'center', textDecoration: 'none' }}>
               <div className={styles.ctaImageContainer}>
                 <Image
-                  src="/images/btn_start_default.jpg"
+                  src="/images/btn_start_default.png"
                   alt="診断を始める (無料)"
                   fill
                   sizes="(max-width: 768px) 100vw, 320px"
@@ -38,7 +38,7 @@ export default function Home() {
                   className={styles.ctaImageDefault}
                 />
                 <Image
-                  src="/images/btn_start_hover.jpg"
+                  src="/images/btn_start_hover.png"
                   alt="診断を始める (無料) - ホバー"
                   fill
                   sizes="(max-width: 768px) 100vw, 320px"
