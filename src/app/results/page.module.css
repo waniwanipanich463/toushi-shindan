@@ -27,8 +27,8 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: var(--spacing-xl);
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
 }
 
 .card {
@@ -41,6 +41,7 @@
     display: flex;
     flex-direction: column;
     border: 1px solid var(--color-border);
+    height: 100%;
 }
 
 .card:hover {
@@ -56,7 +57,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--spacing-xl);
+    padding: var(--spacing-lg);
 }
 
 .characterImage {
@@ -67,7 +68,7 @@
 }
 
 .content {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -87,17 +88,17 @@
 }
 
 .typeName {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 700;
     color: var(--color-primary);
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
 }
 
 .description {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     color: var(--color-text-light);
-    line-height: 1.6;
-    margin-bottom: var(--spacing-lg);
+    line-height: 1.5;
+    margin-bottom: var(--spacing-md);
     flex: 1;
 }
 
@@ -105,7 +106,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: 700;
     color: var(--color-secondary);
 }
@@ -118,27 +119,24 @@
     transform: translateX(4px);
 }
 
-@media (max-width: 768px) {
-    .title {
-        font-size: 2rem;
-    }
-
+@media (max-width: 1200px) {
     .grid {
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        gap: var(--spacing-lg);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (max-width: 480px) {
-    .main {
-        padding-top: var(--spacing-xl);
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .grid {
+        grid-template-columns: 1fr;
     }
 
     .title {
         font-size: 1.75rem;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
     }
 }
