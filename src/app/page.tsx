@@ -48,7 +48,7 @@ export default function Home() {
             <div className={styles.steps}>
               <div className={styles.step}>
                 <div className={styles.stepIcon}>
-                  <Image src="/images/step_1.png" alt="QA" width={140} height={140} />
+                  <Image src="/images/step_1.png" alt="QA" width={140} height={140} unoptimized />
                 </div>
                 <span className={styles.stepNumber}>1</span>
                 <h3>48問の質問に回答</h3>
@@ -56,7 +56,7 @@ export default function Home() {
               </div>
               <div className={styles.step}>
                 <div className={styles.stepIcon}>
-                  <Image src="/images/step_2.png" alt="Type Determination" width={140} height={140} />
+                  <Image src="/images/step_2.png" alt="Type Determination" width={140} height={140} unoptimized />
                 </div>
                 <span className={styles.stepNumber}>2</span>
                 <h3>タイプ判定</h3>
@@ -64,7 +64,7 @@ export default function Home() {
               </div>
               <div className={styles.step}>
                 <div className={styles.stepIcon}>
-                  <Image src="/images/step_3.png" alt="Chart" width={140} height={140} />
+                  <Image src="/images/step_3.png" alt="Chart" width={140} height={140} unoptimized />
                 </div>
                 <span className={styles.stepNumber}>3</span>
                 <h3>診断結果の解説</h3>
