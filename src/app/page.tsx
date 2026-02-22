@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { MotionWrapper } from '@/components/ui/MotionWrapper';
 import { DissolveText } from '@/components/ui/DissolveText';
@@ -28,10 +27,26 @@ export default function Home() {
           </p>
 
           <div className={styles.actions}>
-            <Link href="/diagnosis">
-              <Button size="lg" className={styles.ctaButton}>
-                診断を始める (無料)
-              </Button>
+            <Link href="/diagnosis" style={{ width: '100%', display: 'flex', justifyContent: 'center', textDecoration: 'none' }}>
+              <div className={styles.ctaImageContainer}>
+                <Image
+                  src="/images/btn_start_default.jpg"
+                  alt="診断を始める (無料)"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 320px"
+                  priority
+                  className={styles.ctaImageDefault}
+                />
+                <Image
+                  src="/images/btn_start_hover.jpg"
+                  alt="診断を始める (無料) - ホバー"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 320px"
+                  priority
+                  className={styles.ctaImageHover}
+                  aria-hidden="true"
+                />
+              </div>
             </Link>
             <p className={styles.note}>所要時間: 約3分 / 登録不要</p>
           </div>

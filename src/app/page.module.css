@@ -124,8 +124,40 @@
   gap: var(--spacing-sm);
 }
 
-.ctaButton {
-  min-width: 240px;
+.ctaImageContainer {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 16 / 9;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ctaImageContainer:hover {
+  transform: scale(1.03);
+}
+
+.ctaImageDefault,
+.ctaImageHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.ctaImageHover {
+  opacity: 0;
+}
+
+.ctaImageContainer:hover .ctaImageDefault {
+  opacity: 0;
+}
+
+.ctaImageContainer:hover .ctaImageHover {
+  opacity: 1;
 }
 
 .note {
