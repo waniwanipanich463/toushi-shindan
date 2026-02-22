@@ -58,8 +58,8 @@ function ResultContent() {
                         <Image
                             src={content.characterImage}
                             alt={`${content.name}のキャラクター`}
-                            width={280}
-                            height={280}
+                            width={450}
+                            height={450}
                             priority
                             className={styles.characterImage}
                         />
