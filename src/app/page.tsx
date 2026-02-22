@@ -23,8 +23,8 @@ export default function Home() {
             </span>
           </h1>
           <p className={styles.description}>
-            性格や価値観から、あなたに最適な投資手法（長期・積立・分散など）を提案します。
-            特定銘柄の例示ではなく、自分を知るためのツールです。
+            性格や価値観から、あなたに合いやすい投資スタイル（長期・積立・分散など）の傾向を分析します。
+            特定銘柄を推奨するものではなく、自分を知るための診断ツールです。
           </p>
 
           <div className={styles.actions}>
