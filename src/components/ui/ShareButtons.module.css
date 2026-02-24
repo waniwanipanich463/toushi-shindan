@@ -2,23 +2,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--spacing-md);
-    margin-top: var(--spacing-xl);
-    padding-top: var(--spacing-xl);
-    border-top: 1px solid var(--color-border);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-2xl);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     width: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .label {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--color-text-light);
-    letter-spacing: 0.05em;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: var(--spacing-xs) var(--spacing-xl);
+    border-radius: var(--radius-full);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
 }
 
 .buttons {
     display: flex;
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
@@ -28,23 +38,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    height: 48px;
-    padding: 0 24px;
+    gap: 12px;
+    height: 56px;
+    padding: 0 32px;
     border-radius: 9999px;
     border: none;
-    font-size: 0.95rem;
-    font-weight: 700;
+    font-size: 1.1rem;
+    font-weight: 800;
     cursor: pointer;
-    transition: all 0.2s ease;
-    min-width: 160px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    min-width: 200px;
     text-decoration: none;
     color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
 }
 
 .button:active {
@@ -52,17 +63,16 @@
 }
 
 .twitter {
-    background-color: #000;
-    /* X brand color */
+    background-color: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .twitter:hover {
-    background-color: #333;
+    background-color: #222222;
 }
 
 .line {
     background-color: #06C755;
-    /* LINE brand color */
 }
 
 .line:hover {
@@ -71,4 +81,19 @@
 
 .icon {
     display: block;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+@media (max-width: 480px) {
+    .label {
+        font-size: 1.25rem;
+        padding: var(--spacing-xs) var(--spacing-lg);
+    }
+
+    .button {
+        width: 100%;
+        max-width: 300px;
+        height: 52px;
+        font-size: 1rem;
+    }
 }
