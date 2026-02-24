@@ -369,7 +369,7 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             },
             strengths: ["投資先が化けた時、一世代で富を築けるような爆発力がある", "広範な分散よりも深い確信があるため、暴落時も冷静でいられる", "複雑なポートフォリオ管理が不要で、勝負の時を見極めることに特化できる"],
             weaknesses: ["数社の失敗で資産の大部分が消える深刻なリスクを常に背負っている", "数年間にわたる「市場からの無視（株価低迷）」に耐え続ける地獄がある", "分散のメリットを完全に捨てているため、メンタリティの自己管理が死活問題"],
-            characterImage: "/images/characters/char_galf.png",
+            characterImage: "/images/characters/char_galf_v2.png",
             recommendedServices: [
                 { name: "DMM 株", description: "集中投資に耐えうる低コストと安定性。PR", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" rel="nofollow">初心者も安心！サポート充実の【DMM 株】(PR)</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" alt="">` },
                 { name: "株式投資の情報源", description: "一点集中を支える確かな根拠を提供します。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+DOZOY+ONS+TXW0I" rel="nofollow">あなたの株式投資が一変するかもしれない情報源</a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4AXGGG+DOZOY+ONS+TXW0I" alt="">` },
