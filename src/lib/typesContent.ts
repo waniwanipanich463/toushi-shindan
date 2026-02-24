@@ -395,7 +395,7 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             },
             strengths: ["「恐怖」や「強欲」といった人間らしい感情によるミスを極限まで減らせる", "複数の市場・銘柄を同時に監視し、24時間体制でチャンスを拾える", "過去のデータに基づく統計的優位性のある勝機を知っているため、迷いがない"],
             weaknesses: ["市場の構造変化（ルール変更や予期せぬショック）にシステムが対応できない時期がある", "システム構築やデータ収集に高度なスキルと膨大な初期投資（時間）が必要", "運用が機械的すぎて、投資の「手応え」や「楽しさ」を感じにくい"],
-            characterImage: "/images/characters/char_gatd.png",
+            characterImage: "/images/characters/char_gatd_v2.png",
             recommendedServices: [
                 { name: "FXTF", description: "システムトレードの世界標準MT4を提供。口座開設はこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+APTO2+48D0+68EPE" rel="nofollow">メタトレーダー4[MT4]で24時間取引可能!口座開設はFXTF</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AXGGG+APTO2+48D0+68EPE" alt="">` },
                 { name: "DMM FX", description: "ルールに基づいた為替戦略。アカウント登録はこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGE+9OALO2+1WP2+6JC82" rel="nofollow">【PR】【DMM FX】アカウント登録のお申込みはこちら</a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4AXGGE+9OALO2+1WP2+6JC82" alt="">` },
