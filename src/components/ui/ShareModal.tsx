@@ -71,8 +71,8 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, typeCod
                             <Image
                                 src="/images/logo_line_v2.png"
                                 alt="LINE Logo"
-                                width={24}
-                                height={24}
+                                width={32}
+                                height={32}
                                 className={styles.lineIcon}
                             />
                             LINEで送る
