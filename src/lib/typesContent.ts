@@ -34,7 +34,7 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             },
             strengths: ["市場平均を確実に享受", "感情に左右されない", "手間がかからない"],
             weaknesses: ["短期間で資産は増えない", "退屈で面白みがない", "相場急変時の対応が遅れる"],
-            characterImage: "/images/characters/char_sald_v3.png",
+            characterImage: "/images/characters/char_sild_v3.png",
             recommendedServices: [
                 { name: "初心者向けFXスクール", description: "金融庁登録済みの安心安全なスクールで、投資の基礎を学べます。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+2Q8JLE+5J1A+5YZ76" rel="nofollow">FXを優しく基礎から！金融庁に登録済みのFXスクールだから安心安全です。【投資助言・代理業登録】</a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4AXGGG+2Q8JLE+5J1A+5YZ76" alt="">` },
                 { name: "ウルトラ投資アプリ【TOSSY】", description: "スマホで手軽に投資管理。詳しくはこちらから。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGF+GIS242+1WP2+1HM30Y" rel="nofollow">【PR】ウルトラ投資アプリ【TOSSY】 詳しくはこちら→</a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4AXGGF+GIS242+1WP2+1HM30Y" alt="">` },
@@ -134,7 +134,7 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             },
             strengths: ["深い企業理解に基づき、株価の変動に動じない確固たる自信が持てる", "市場が気づいていない「割安・成長」銘柄を発掘する喜びがある", "自ら考えて勝つことで、投資を通じた自己成長を実感できる"],
             weaknesses: ["1銘柄の分析に多大な時間と労力を要する", "自分の分析が間違っていた場合（思い込み）、大きな損失を抱えるリスクがある", "特定の銘柄に愛着が湧きすぎて、損切りが遅れやすい"],
-            characterImage: "/images/characters/char_sald.png",
+            characterImage: "/images/characters/char_sald_v3.png",
             recommendedServices: [
                 { name: "株式投資の情報源", description: "分析の精度を高めるための必須情報。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+DOZOY+ONS+TXW0I" rel="nofollow">あなたの株式投資が一変するかもしれない情報源</a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4AXGGG+DOZOY+ONS+TXW0I" alt="">` },
                 { name: "投資管理アプリ【TOSSY】", description: "個別株の複雑な管理に。詳しくはこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGF+GIS242+1WP2+1HM30Y" rel="nofollow">【PR】ウルトラ投資アプリ【TOSSY】 詳しくはこちら→</a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4AXGGF+GIS242+1WP2+1HM30Y" alt="">` },
@@ -239,7 +239,7 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             },
             strengths: ["複利効果（雪だるま式）を最大限に活用し、将来の大きな資産を築ける", "日々の価格変動を無視して、自分の生活や趣味に集中できる", "投資の知識が少なくても、時間を味方につけるだけで勝てる"],
             weaknesses: ["資産の大半を株にするため、一時的に30〜50%の含み損を抱える可能性がある", "目標を達成するまでが非常に長く、途中でモチベーションが下がりやすい", "退職間際の暴落に対処するための「出口戦略」が必要になる"],
-            characterImage: "/images/characters/char_gild_v3.png",
+            characterImage: "/images/characters/char_gild_v2.png",
             recommendedServices: [
                 { name: "DMM 株", description: "成長株積立にも適した、サポート充実の証券会社。(PR)", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" rel="nofollow">初心者も安心！サポート充実の【DMM 株】(PR)</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" alt="">` },
                 { name: "投資管理アプリ【TOSSY】", description: "成長の軌跡を可視化。詳しくはこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGF+GIS242+1WP2+1HM30Y" rel="nofollow">【PR】ウルトラ投資アプリ【TOSSY】 詳しくはこちら→</a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4AXGGF+GIS242+1WP2+1HM30Y" alt="">` },
