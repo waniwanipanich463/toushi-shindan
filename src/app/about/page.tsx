@@ -21,23 +21,28 @@ export default function AboutPage() {
                             <tbody>
                                 <tr>
                                     <th>運営者名</th>
-                                    <td>〇〇（本名または屋号）</td>
-                                </tr>
-                                <tr>
-                                    <th>所在地</th>
-                                    <td>日本</td>
+                                    <td>つむぎ部屋</td>
                                 </tr>
                                 <tr>
                                     <th>お問い合わせ</th>
-                                    <td>example@example.com</td>
+                                    <td>money.revenge001@gmail.com</td>
                                 </tr>
                                 <tr>
                                     <th>サイトURL</th>
-                                    <td>https://xxxx.com</td>
+                                    <td>
+                                        <a
+                                            href="https://youtube.com/channel/UC2VfIGmIV_2FSB7r0fIkbKg?si=4RIJ_ZebY8oljmo4"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            style={{ textDecoration: 'underline' }}
+                                        >
+                                            https://youtube.com/channel/UC2VfIGmIV_2FSB7r0fIkbKg?si=4RIJ_ZebY8oljmo4
+                                        </a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th>制定日</th>
-                                    <td>2026年〇月〇日</td>
+                                    <td>11/28</td>
                                 </tr>
                             </tbody>
                         </table>
