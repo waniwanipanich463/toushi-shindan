@@ -161,7 +161,7 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             },
             strengths: ["成功した際のリターンが爆発的で、最短で大きな資産を築ける可能性がある", "管理する銘柄が少ないため、一つひとつの動きを詳細に把握できる", "市場平均に左右されない、独自の勝ちパターンを構築できる"],
             weaknesses: ["1銘柄のネガティブニュースで資産の半分を失うようなリスクがある", "高いボラティリティ（価格変動）に耐える、強靭な精神力が求められる", "分散効果が働かないため、運の要素にも大きく左右されやすい"],
-            characterImage: "/images/characters/char_salf.png",
+            characterImage: "/images/characters/char_salf_v2.png",
             recommendedServices: [
                 { name: "DMM 株", description: "一点集中投資のリサーチに役立つツール。PR", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" rel="nofollow">初心者も安心！サポート充実の【DMM 株】(PR)</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" alt="">` },
                 { name: "株式投資の情報源", description: "勝負銘柄を見極めるための羅針盤。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+DOZOY+ONS+TXW0I" rel="nofollow">あなたの株式投資が一変するかもしれない情報源</a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4AXGGG+DOZOY+ONS+TXW0I" alt="">` },
