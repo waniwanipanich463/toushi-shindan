@@ -12,7 +12,6 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
   title: "投資スタイル診断 | toushi-shindan",
   description: "あなたの性格や価値観から最適な投資スタイルを診断します。",
@@ -27,8 +26,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   icons: {
-    icon: "/icon.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/icon.png?v=3",
+    apple: "/apple-touch-icon.png?v=3",
   },
 };
 
