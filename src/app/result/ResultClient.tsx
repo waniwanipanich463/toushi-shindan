@@ -21,7 +21,7 @@ const getSimulationParams = (typeCode: string) => {
         'SITD': { asset: 3000000, target: 40000000 },  // 短期ディフェンダー: 300万 -> 4000万
         'SITF': { asset: 10000000, target: 50000000 }, // 要塞構築型: 1000万 -> 5000万
         'SALD': { asset: 2000000, target: 100000000 }, // 銘柄分析の探求者: 200万 -> 1億
-        'SALF': { asset: 5000000, target: 150000000 }, // 集中投資の信奉者: 500万 -> 1.5億
+        'SALF': { asset: 5000000, target: 150000000 }, // 集中投資の信奉者: 50万 -> 1.5億
         'SATD': { asset: 1000000, target: 30000000 },  // 慎重なスイングトレーダー: 100万 -> 3000万
         'SATF': { asset: 2000000, target: 150000000 }, // 一点突破の狙撃手: 200万 -> 1.5億
         'GILD': { asset: 500000, target: 100000000 },  // 成長重視の積立投資家: 50万 -> 1億
@@ -184,6 +184,17 @@ function ResultContent() {
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}
                         >
+                            <div className={styles.bannerWrapper}>
+                                <Image
+                                    src={isHovered ? "/images/banner_simulation_hover.png?v=5" : "/images/banner_simulation_v2.png?v=5"}
+                                    alt="診断結果をもとに資産形成シミュレーションを試す"
+                                    width={1200}
+                                    height={300}
+                                    layout="responsive"
+                                    className={styles.simulationBanner}
+                                    priority
+                                />
+                            </div>
                         </a>
                         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
                             <Link href="/diagnosis">
