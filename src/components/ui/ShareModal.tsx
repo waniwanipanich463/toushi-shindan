@@ -69,7 +69,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, typeCod
                             className={`${styles.shareButton} ${styles.line}`}
                         >
                             <Image
-                                src="/images/logo_line.png"
+                                src="/images/logo_line_v2.png"
                                 alt="LINE Logo"
                                 width={24}
                                 height={24}
