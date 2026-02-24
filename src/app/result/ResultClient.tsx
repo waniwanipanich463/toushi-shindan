@@ -184,17 +184,6 @@ function ResultContent() {
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}
                         >
-                            <div className={styles.bannerWrapper}>
-                                <Image
-                                    src={isHovered ? "/images/banner_simulation_hover.png?v=1" : "/images/banner_simulation_v2.png?v=2"}
-                                    alt="診断結果をもとに資産形成シミュレーションを試す"
-                                    width={1200}
-                                    height={300}
-                                    layout="responsive"
-                                    className={styles.simulationBanner}
-                                    priority
-                                />
-                            </div>
                         </a>
                         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
                             <Link href="/diagnosis">
