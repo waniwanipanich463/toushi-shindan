@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
+import Image from 'next/image';
 import { MotionWrapper } from '@/components/ui/MotionWrapper';
 import styles from './ShareModal.module.css';
 
