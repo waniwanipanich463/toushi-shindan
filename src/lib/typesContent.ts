@@ -239,7 +239,7 @@ export const getTypeContent = (typeCode: string): InvestmentType => {
             },
             strengths: ["複利効果（雪だるま式）を最大限に活用し、将来の大きな資産を築ける", "日々の価格変動を無視して、自分の生活や趣味に集中できる", "投資の知識が少なくても、時間を味方につけるだけで勝てる"],
             weaknesses: ["資産の大半を株にするため、一時的に30〜50%の含み損を抱える可能性がある", "目標を達成するまでが非常に長く、途中でモチベーションが下がりやすい", "退職間際の暴落に対処するための「出口戦略」が必要になる"],
-            characterImage: "/images/characters/char_gild.png",
+            characterImage: "/images/characters/char_gild_v2.png",
             recommendedServices: [
                 { name: "DMM 株", description: "成長株積立にも適した、サポート充実の証券会社。(PR)", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" rel="nofollow">初心者も安心！サポート充実の【DMM 株】(PR)</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AXGGG+ZQ12Q+1WP2+15R4NM" alt="">` },
                 { name: "投資管理アプリ【TOSSY】", description: "成長の軌跡を可視化。詳しくはこちら。", affiliateHtml: `<a href="https://px.a8.net/svt/ejp?a8mat=4AXGGF+GIS242+1WP2+1HM30Y" rel="nofollow">【PR】ウルトラ投資アプリ【TOSSY】 詳しくはこちら→</a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4AXGGF+GIS242+1WP2+1HM30Y" alt="">` },
