@@ -183,7 +183,7 @@ function ResultContent() {
                         >
                             <div className={styles.bannerWrapper}>
                                 <Image
-                                    src="/images/banner_simulation.png"
+                                    src="/images/banner_simulation_v2.png?v=1"
                                     alt="診断結果をもとに資産形成シミュレーションを試す"
                                     width={1000}
                                     height={250}
