@@ -7,9 +7,9 @@ import Image from 'next/image';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { ResultChart } from '@/components/diagnosis/ResultChart';
-import { getTypeContent } from '@/lib/typesContent';
 import { ShareButtons } from '@/components/ui/ShareButtons';
 import { MotionWrapper } from '@/components/ui/MotionWrapper';
+import { getTypeContent } from '@/lib/typesContent';
 import charStyles from './characteristics.module.css';
 import styles from './page.module.css';
 
@@ -196,6 +196,19 @@ function ResultContent() {
                                 />
                             </div>
                         </a>
+                        <div className={styles.tumugiCTA}>
+                            <p className={styles.tumugiLabel}>＼ あなたの本当の価値観を紐解く ／</p>
+                            <a
+                                href="https://tumugi-lp.vercel.app"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.tumugiButton}
+                            >
+                                <span className={styles.tumugiIcon}>✨</span>
+                                <span>自分らしい人生を編む「Tumugi」の詳細はこちら</span>
+                            </a>
+                        </div>
+
                         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
                             <Link href="/diagnosis">
                                 <Button variant="outline">もう一度診断する</Button>

@@ -38,15 +38,17 @@ export interface InvestmentType {
   strengths: string[];
   weaknesses: string[];
   characterImage: string;
-  recommendedServices: {
-    name: string;
-    description: string;
-    url?: string;
-    affiliateHtml?: string;
-  }[];
+  recommendedServices: AffiliateService[];
   samplePortfolio: {
     name: string;
     ticker: string;
     ratio: string;
   }[];
+}
+
+export interface AffiliateService {
+  name: string;
+  description: string;
+  url?: string;
+  affiliateHtml?: string;
 }
