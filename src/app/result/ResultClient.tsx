@@ -204,7 +204,6 @@ function ResultContent() {
                                 rel="noopener noreferrer"
                                 className={styles.tumugiButton}
                             >
-                                <span className={styles.tumugiIcon}>✨</span>
                                 <span>「資産を育てるつむぎ」の詳細はこちら</span>
                             </a>
                         </div>
