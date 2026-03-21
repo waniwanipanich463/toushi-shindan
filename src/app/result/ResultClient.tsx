@@ -1,6 +1,6 @@
 'use client';
 
-import React, { Suspense, useState } from 'react';
+import React, { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -47,7 +47,6 @@ function ResultContent() {
     const d_f = parseInt(searchParams.get('df') || '0', 10);
 
     const content = getTypeContent(typeCode);
-    const [isHovered, setIsHovered] = useState(false);
 
     return (
         <main className={styles.main}>
@@ -172,30 +171,17 @@ function ResultContent() {
 
                 <MotionWrapper className={styles.actions} delay={0.9}>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', width: '100%', maxWidth: '800px', margin: '3rem auto 0' }}>
-                        <a
-                            href={`https://asset-management-roadmap.vercel.app/simulate?mbti=${typeCode}&target=${getSimulationParams(typeCode).target}&asset=${getSimulationParams(typeCode).asset}`}
-                            style={{
-                                display: 'block',
-                                width: '100%',
-                                textDecoration: 'none',
-                                transition: 'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
-                            }}
-                            className={styles.bannerLink}
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
-                        >
-                            <div className={styles.bannerWrapper}>
-                                <Image
-                                    src={isHovered ? "/images/banner_simulation_hover.png" : "/images/banner_simulation_v2.png"}
-                                    alt="診断結果をもとに資産形成シミュレーションを試す"
-                                    width={1200}
-                                    height={300}
-                                    layout="responsive"
-                                    className={styles.simulationBanner}
-                                    priority
-                                />
-                            </div>
-                        </a>
+                        <div className={styles.simulationCTA}>
+                            <p className={styles.simulationLabel}>＼ 資産形成の未来を予測する ／</p>
+                            <a
+                                href={`https://asset-management-roadmap.vercel.app/simulate?mbti=${typeCode}&target=${getSimulationParams(typeCode).target}&asset=${getSimulationParams(typeCode).asset}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.simulationButton}
+                            >
+                                <span>診断結果をもとに資産形成シミュレーションを試す</span>
+                            </a>
+                        </div>
                         <div className={styles.tumugiCTA}>
                             <p className={styles.tumugiLabel}>＼ あなたの本当の価値観を紐解く ／</p>
                             <a
