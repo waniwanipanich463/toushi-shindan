@@ -205,7 +205,7 @@ function ResultContent() {
                                 className={styles.tumugiButton}
                             >
                                 <span className={styles.tumugiIcon}>✨</span>
-                                <span>自分らしい人生を編む「資産を育てるつむぎ」の詳細はこちら</span>
+                                <span>「資産を育てるつむぎ」の詳細はこちら</span>
                             </a>
                         </div>
 
