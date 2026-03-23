@@ -2,21 +2,77 @@
     min-height: 100vh;
     padding-top: var(--spacing-xl);
     padding-bottom: var(--spacing-xl);
-    background-color: var(--color-background);
+    background-color: var(--color-cyber-bg);
+    position: relative;
+    overflow: hidden;
 }
+
+/* Cyberpunk Background Elements */
+.cyberGrid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-image: 
+        linear-gradient(rgba(0, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    transform: perspective(500px) rotateX(60deg) translateY(-50%) translateZ(0);
+    animation: gridMove 20s linear infinite;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+@keyframes gridMove {
+    from { background-position: 0 0; }
+    to { background-position: 0 100%; }
+}
+
+.scanlines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%, 
+        rgba(0, 0, 0, 0.1) 50%
+    );
+    background-size: 100% 4px;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0.15;
+}
+
+.cyberGlow {
+    position: fixed;
+    top: -10%;
+    right: -10%;
+    width: 50%;
+    height: 50%;
+    background: radial-gradient(circle, rgba(255, 0, 255, 0.1) 0%, transparent 70%);
+    filter: blur(80px);
+    z-index: -1;
+    pointer-events: none;
+}
+
 
 .header {
     text-align: center;
     margin-bottom: var(--spacing-3xl);
-    padding: var(--spacing-2xl) var(--spacing-md);
-    background-image: url('/images/bg/cyber_hero.jpg');
-    background-size: cover;
-    background-position: center;
+    padding: var(--spacing-3xl) var(--spacing-md);
+    background: linear-gradient(135deg, rgba(20, 20, 30, 0.8) 0%, rgba(10, 10, 20, 0.9) 100%);
     border-radius: var(--radius-lg);
     position: relative;
     overflow: hidden;
     color: white;
+    border: 1px solid var(--color-cyber-cyan);
+    box-shadow: var(--glow-cyan);
+    backdrop-filter: blur(10px);
 }
+
 
 .header::before {
     content: "";
@@ -72,8 +128,9 @@
 
 .characterImage {
     mix-blend-mode: normal;
-    filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.3));
+    filter: drop-shadow(0 0 20px var(--color-cyber-cyan)) drop-shadow(0 0 40px rgba(0, 255, 255, 0.2));
 }
+
 
 .characterImageWrapper {
     margin: var(--spacing-xl) auto;
@@ -87,23 +144,27 @@
 }
 
 .sectionTitle {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 800;
-    color: var(--color-primary);
+    color: #fff;
     margin-bottom: var(--spacing-2xl);
     text-align: center;
     position: relative;
     z-index: 2;
-    background: rgba(255, 255, 255, 0.85);
-    padding: var(--spacing-sm) var(--spacing-2xl);
-    border-radius: var(--radius-full);
+    background: rgba(16, 16, 28, 0.8);
+    padding: var(--spacing-sm) var(--spacing-3xl);
+    border-radius: var(--radius-md);
     display: table;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: var(--glow-fuchsia);
+    backdrop-filter: blur(12px);
+    border: 2px solid var(--color-cyber-fuchsia);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px var(--color-cyber-fuchsia);
 }
+
 
 .adviceSection {
     margin-bottom: var(--spacing-3xl);
@@ -141,13 +202,21 @@
 }
 
 .adviceCard {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(16, 16, 28, 0.7);
     padding: var(--spacing-lg);
-    border-radius: var(--radius-lg);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    transition: all 0.3s ease;
 }
+
+.adviceCard:hover {
+    border-color: var(--color-cyber-cyan);
+    box-shadow: var(--glow-cyan);
+    transform: translateY(-5px);
+}
+
 
 .adviceCard h4 {
     font-size: 0.875rem;
@@ -169,15 +238,17 @@
 }
 
 .cautionBox {
-    background-color: #fff8e1;
-    /* Light amber */
-    border: 1px solid var(--color-accent);
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid var(--color-cyber-yellow);
     padding: var(--spacing-md);
     border-radius: var(--radius-md);
-    color: #5d4037;
+    color: var(--color-cyber-yellow);
     position: relative;
     z-index: 1;
+    box-shadow: var(--glow-yellow);
+    backdrop-filter: blur(5px);
 }
+
 
 .cautionBox h4 {
     font-weight: 700;
@@ -250,21 +321,22 @@
     width: 100%;
     max-width: 600px;
     padding: var(--spacing-lg) var(--spacing-2xl);
-    background: linear-gradient(135deg, #f59e0b 0%, #ef4444 50%, #db2777 100%);
-    background-size: 200% auto;
+    background: linear-gradient(90deg, #FF00FF 0%, #9400D3 100%);
     color: white;
     text-decoration: none;
     font-weight: 800;
     font-size: 1.25rem;
-    border-radius: var(--radius-full);
-    box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.4), 0 8px 10px -6px rgba(245, 158, 11, 0.4);
+    border-radius: 4px; /* Hard edges for cyberpunk */
+    box-shadow: var(--glow-fuchsia);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid #FF00FF;
     text-align: center;
-    animation: gradientShift 5s ease infinite;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
+
 
 .simulationButton::before {
     content: "";
@@ -318,21 +390,22 @@
     width: 100%;
     max-width: 600px;
     padding: var(--spacing-lg) var(--spacing-2xl);
-    background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
-    background-size: 200% auto;
-    color: white;
+    background: linear-gradient(90deg, #00FFFF 0%, #1E90FF 100%);
+    color: #0a0a12;
     text-decoration: none;
     font-weight: 800;
     font-size: 1.25rem;
-    border-radius: var(--radius-full);
-    box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.4), 0 8px 10px -6px rgba(99, 102, 241, 0.4);
+    border-radius: 4px;
+    box-shadow: var(--glow-cyan);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid #00FFFF;
     text-align: center;
-    animation: gradientShift 5s ease infinite;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
+
 
 @keyframes gradientShift {
     0% { background-position: 0% 50%; }

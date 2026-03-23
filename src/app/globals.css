@@ -32,21 +32,28 @@
   /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
-}
 
-
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  /* Cyberpunk Palette */
+  --color-cyber-bg: #0a0a12;
+  --color-cyber-fuchsia: #FF00FF;
+  --color-cyber-violet: #9400D3;
+  --color-cyber-electric: #1E90FF;
+  --color-cyber-cyan: #00FFFF;
+  --color-cyber-yellow: #FFD700;
+  --color-cyber-dark-surface: rgba(16, 16, 28, 0.85);
+  
+  /* Neon Glows */
+  --glow-fuchsia: 0 0 10px var(--color-cyber-fuchsia), 0 0 20px rgba(255, 0, 255, 0.3);
+  --glow-cyan: 0 0 10px var(--color-cyber-cyan), 0 0 20px rgba(0, 255, 255, 0.3);
+  --glow-yellow: 0 0 10px var(--color-cyber-yellow), 0 0 20px rgba(255, 215, 0, 0.3);
 }
 
 body {
   font-family: var(--font-noto-sans), var(--font-inter), sans-serif;
-  background-color: var(--color-background);
-  color: var(--color-text);
+  background-color: var(--color-cyber-bg);
+  color: #ffffff;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 a {

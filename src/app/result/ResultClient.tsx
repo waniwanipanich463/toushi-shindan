@@ -50,6 +50,11 @@ function ResultContent() {
 
     return (
         <main className={styles.main}>
+            {/* Cyberpunk Background Layers */}
+            <div className={styles.cyberGrid}></div>
+            <div className={styles.scanlines}></div>
+            <div className={styles.cyberGlow}></div>
+            
             <Container size="lg">
                 <MotionWrapper className={styles.header}>
                     <h1 className={styles.titlePrefix}>診断結果</h1>

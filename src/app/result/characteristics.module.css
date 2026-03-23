@@ -1,27 +1,11 @@
 .characteristicsSection {
     margin-bottom: var(--spacing-3xl);
     padding: var(--spacing-xl) var(--spacing-lg);
-    background-image: url('/images/bg_characteristics.png');
-    background-size: cover;
-    background-position: center;
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-}
-
-.characteristicsSection::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.3);
-    pointer-events: none;
-    z-index: 0;
 }
 
 .characteristicsGrid {
@@ -41,41 +25,54 @@
 
 .strengthBox,
 .weaknessBox {
-    padding: var(--spacing-lg);
-    border-radius: var(--radius-lg);
-    backdrop-filter: blur(12px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    padding: var(--spacing-xl);
+    border-radius: 4px; /* Cyperpunk style hard edges */
+    backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
 }
 
 .strengthBox {
-    background-color: rgba(240, 253, 244, 0.9);
-    /* Semi-transparent light green */
-    border: 1px solid rgba(187, 247, 208, 0.6);
+    background-color: rgba(0, 255, 255, 0.05);
+    border: 1px solid var(--color-cyber-cyan);
+    box-shadow: var(--glow-cyan);
 }
 
 .weaknessBox {
-    background-color: rgba(254, 242, 242, 0.9);
-    /* Semi-transparent light red */
-    border: 1px solid rgba(254, 202, 202, 0.6);
+    background-color: rgba(255, 0, 255, 0.05);
+    border: 1px solid var(--color-cyber-fuchsia);
+    box-shadow: var(--glow-fuchsia);
+}
+
+.strengthBox:hover {
+    box-shadow: 0 0 20px var(--color-cyber-cyan), 0 0 40px rgba(0, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.weaknessBox:hover {
+    box-shadow: 0 0 20px var(--color-cyber-fuchsia), 0 0 40px rgba(255, 0, 255, 0.2);
+    transform: translateY(-5px);
 }
 
 .boxTitle {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 800;
     margin-bottom: var(--spacing-md);
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .strengthBox .boxTitle {
-    color: #15803d;
-    /* Slightly darker green for better contrast */
+    color: var(--color-cyber-cyan);
+    text-shadow: 0 0 8px var(--color-cyber-cyan);
 }
 
 .weaknessBox .boxTitle {
-    color: #b91c1c;
-    /* Slightly darker red for better contrast */
+    color: var(--color-cyber-fuchsia);
+    text-shadow: 0 0 8px var(--color-cyber-fuchsia);
 }
 
 .list {
@@ -86,23 +83,18 @@
 
 .list li {
     position: relative;
-    padding-left: 1.2em;
-    margin-bottom: 0.5em;
+    padding-left: 1.5em;
+    margin-bottom: 0.8em;
     line-height: 1.6;
-    color: #333333;
-    /* Force dark text on light background boxes */
+    color: #ffffff;
+    font-size: 1.1rem;
 }
 
 .list li::before {
-    content: "•";
+    content: ">>";
     position: absolute;
     left: 0;
-    color: currentColor;
+    color: inherit;
+    font-family: monospace;
     font-weight: bold;
-}
-
-.icon {
-    display: inline-block;
-    /* Flex gap in parent handles spacing */
-    mix-blend-mode: multiply;
 }
