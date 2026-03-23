@@ -31,6 +31,16 @@ export default function Home() {
               className={styles.titleImage}
             />
           </div>
+          
+          <div className={styles.heroActions}>
+            <Link href="/diagnosis" style={{ width: '100%', display: 'flex', justifyContent: 'center', textDecoration: 'none' }}>
+              <div className={styles.ctaButton}>
+                <span className={styles.ctaText}>診断を始める</span>
+                <div className={styles.ctaGlow} />
+              </div>
+            </Link>
+            <p className={styles.note}>TIME: APPROX 3 MIN / NO REGISTRATION</p>
+          </div>
         </div>
       </section>
 
@@ -43,15 +53,6 @@ export default function Home() {
             性格や価値観から、あなたに合いやすい投資スタイル（長期・積立・分散など）の傾向を分析します。
             特定銘柄を推奨するものではなく、自分を知るための診断ツールです。
           </p>
-          <div className={styles.actionsUnder}>
-            <Link href="/diagnosis" style={{ width: '100%', display: 'flex', justifyContent: 'center', textDecoration: 'none' }}>
-              <div className={styles.ctaButton}>
-                <span className={styles.ctaText}>診断を始める</span>
-                <div className={styles.ctaGlow} />
-              </div>
-            </Link>
-            <p className={styles.note}>TIME: APPROX 3 MIN / NO REGISTRATION</p>
-          </div>
         </MotionWrapper>
       </Container>
 
