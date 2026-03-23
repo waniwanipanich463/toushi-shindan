@@ -179,7 +179,7 @@ function ResultContent() {
                                 rel="noopener noreferrer"
                                 className={styles.simulationButton}
                             >
-                                <span>診断結果をもとに資産形成シミュレーションを試す</span>
+                                <span>診断結果をもとに資産運用シミュレーションを試す</span>
                             </a>
                         </div>
                         <div className={styles.tumugiCTA}>
