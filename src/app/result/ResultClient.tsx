@@ -185,18 +185,6 @@ function ResultContent() {
                                 <span>運用シミュレーションを開始</span>
                             </a>
                         </div>
-                        <div className={styles.tumugiCTA}>
-                            <p className={styles.tumugiLabel}>＼ あなたの本当の価値観を紐解く ／</p>
-                            <a
-                                href="https://tumugi-lp.vercel.app"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={styles.tumugiButton}
-                            >
-                                <span>「資産を育てるつむぎ」の詳細</span>
-                            </a>
-                        </div>
-
                         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
                             <Link href="/diagnosis" style={{ flex: 1, minWidth: '200px' }}>
                                 <Button variant="outline" fullWidth>RETRY DIAGNOSIS</Button>
