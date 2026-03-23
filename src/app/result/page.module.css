@@ -204,6 +204,7 @@
     font-weight: 900;
     color: #fff;
     margin-bottom: var(--spacing-sm);
+    text-align: center;
 }
 
 .serviceDesc {
@@ -211,21 +212,44 @@
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.6;
     margin-bottom: var(--spacing-lg);
+    text-align: center;
 }
 
-.serviceLink {
-    color: var(--color-cyber-cyan);
+.serviceLink,
+.affiliateTag a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.5rem;
+    background: var(--color-cyber-cyan);
+    color: #000 !important;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.9rem;
+    border-radius: 4px;
+    box-shadow: var(--glow-cyan);
+    transition: all 0.3s ease;
+    text-decoration: none;
     position: relative;
     z-index: 2;
 }
 
+.serviceLink:hover,
+.affiliateTag a:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    box-shadow: 0 0 20px var(--color-cyber-cyan);
+}
+
 .affiliateTag {
-    position: relative;
-    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-sm);
+}
+
+.affiliateTag img {
+    display: none; /* Hide tracking pixel to avoid layout issues, or keep it */
 }
 
 .simulationCTA, .tumugiCTA {

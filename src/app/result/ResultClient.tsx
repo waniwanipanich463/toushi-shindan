@@ -159,9 +159,11 @@ function ResultContent() {
                                         <h4 className={styles.serviceName}>{service.name}</h4>
                                         <p className={styles.serviceDesc}>{service.description}</p>
                                         {service.url && (
-                                            <a href={service.url} target="_blank" rel="noopener noreferrer" className={styles.serviceLink}>
-                                                公式サイトを見る →
-                                            </a>
+                                            <div className={styles.affiliateTag}>
+                                                <a href={service.url} target="_blank" rel="noopener noreferrer" className={styles.serviceLink}>
+                                                    公式サイトを見る →
+                                                </a>
+                                            </div>
                                         )}
                                     </>
                                 )}
