@@ -13,12 +13,15 @@
   min-height: 500px;
   max-height: 900px;
   position: relative;
+  /* Explicitly set z-index to create a stacking context so children with z-index:-1 
+     don't fall behind the global body background/grid.
+  */
+  z-index: 5;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Ensure it starts exactly below the sticky header without gap or overlap */
-  background: #000;
+  background: transparent;
 }
 
 .videoBackgroundWrapper {
@@ -28,13 +31,14 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: #000;
+  /* Remove opaque background that might mask the video */
+  background: transparent;
 }
 
 .videoBackground {
   width: 100%;
   height: 100%;
-  /* Expand to fill-edges as requested */
+  /* Back to cover to ensure it fills the edges */
   object-fit: cover;
   filter: brightness(0.8) contrast(1.1);
 }
