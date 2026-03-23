@@ -23,7 +23,7 @@ export default function Home() {
         <div className={styles.heroTitleContainer}>
           <div className={styles.titleGlitchWrapper} data-text="つむぎの投資診断">
             <Image
-              src="/hero_title.png"
+              src="/title.png"
               alt="つむぎの投資診断"
               width={600}
               height={200}
