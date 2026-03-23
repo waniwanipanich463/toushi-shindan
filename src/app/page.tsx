@@ -66,24 +66,36 @@ export default function Home() {
                 <div className={styles.stepIcon}>
                   <Image src="/images/step_1.png" alt="QA" width={120} height={120} unoptimized />
                 </div>
-                <h3>質問に回答</h3>
-                <p>直感で48問に答える</p>
+                <div className={styles.stepContent}>
+                  <h3>質問に回答</h3>
+                  <p>直感で48問に答える</p>
+                </div>
               </div>
+
+              <div className={styles.stepArrow}></div>
+
               <div className={styles.step}>
                 <span className={styles.stepNumber}>02</span>
                 <div className={styles.stepIcon}>
                   <Image src="/images/step_2.png" alt="Type Determination" width={120} height={120} unoptimized />
                 </div>
-                <h3>タイプ判定</h3>
-                <p>16タイプの中から分類</p>
+                <div className={styles.stepContent}>
+                  <h3>タイプ判定</h3>
+                  <p>16タイプの中から分類</p>
+                </div>
               </div>
+
+              <div className={styles.stepArrow}></div>
+
               <div className={styles.step}>
                 <span className={styles.stepNumber}>03</span>
                 <div className={styles.stepIcon}>
                   <Image src="/images/step_3.png" alt="Chart" width={120} height={120} unoptimized />
                 </div>
-                <h3>診断結果</h3>
-                <p>特性とスタイルを解説</p>
+                <div className={styles.stepContent}>
+                  <h3>診断結果</h3>
+                  <p>特性とスタイルを解説</p>
+                </div>
               </div>
             </div>
           </MotionWrapper>
