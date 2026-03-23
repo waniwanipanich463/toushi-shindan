@@ -11,16 +11,16 @@ export default function Home() {
     <main className={styles.main}>
       <Container className={styles.hero}>
         <MotionWrapper className={styles.heroContent}>
-          <h1 className={styles.title}>
+          <div className={styles.title}>
             <span className={styles.subtitle}>4軸×2＝16タイプで分析</span>
-            <span className={styles.titleMain}>
+            <h1 className={styles.titleMain}>
               <DissolveText text="あなたの" delay={0.5} />
               <span className={styles.highlight}>
                 <DissolveText text="投資スタイル" delay={0.9} />
               </span>
               <DissolveText text="を診断" delay={1.5} />
-            </span>
-          </h1>
+            </h1>
+          </div>
           <p className={styles.description}>
             性格や価値観から、あなたに合いやすい投資スタイル（長期・積立・分散など）の傾向を分析します。
             特定銘柄を推奨するものではなく、自分を知るための診断ツールです。
@@ -28,7 +28,7 @@ export default function Home() {
 
           <div className={styles.actions}>
             <Link href="/diagnosis" style={{ width: '100%', display: 'flex', justifyContent: 'center', textDecoration: 'none' }}>
-              <div className={styles.ctaImageContainer}>
+              <div className={`${styles.ctaImageContainer} glitch`}>
                 <Image
                   src="/images/btn_start_default.png"
                   alt="診断を始める (無料)"
@@ -48,49 +48,51 @@ export default function Home() {
                 />
               </div>
             </Link>
-            <p className={styles.note}>所要時間: 約3分 / 登録不要</p>
+            <p className={styles.note}>TIME: APPROX 3 MIN / NO REGISTRATION</p>
           </div>
         </MotionWrapper>
         <MotionWrapper className={styles.heroImageWrapper} delay={0.2}>
-          <Image
-            src="/images/hero_new.png"
-            alt="Investment Analysis"
-            width={600}
-            height={600}
-            priority
-            className={styles.heroImage}
-          />
+          <div className={styles.imageGlowEffect}>
+            <Image
+              src="/images/hero_new.png"
+              alt="Investment Analysis"
+              width={600}
+              height={600}
+              priority
+              className={styles.heroImage}
+            />
+          </div>
         </MotionWrapper>
       </Container>
 
       <section className={styles.features}>
         <Container>
           <MotionWrapper delay={0.4}>
-            <h2 className={styles.sectionTitle}>診断の流れ</h2>
+            <h2 className={styles.sectionTitle}>SYSTEM FLOW</h2>
             <div className={styles.steps}>
               <div className={styles.step}>
+                <span className={styles.stepNumber}>01</span>
                 <div className={styles.stepIcon}>
-                  <Image src="/images/step_1.png" alt="QA" width={140} height={140} unoptimized />
+                  <Image src="/images/step_1.png" alt="QA" width={120} height={120} unoptimized />
                 </div>
-                <span className={styles.stepNumber}>1</span>
-                <h3>48問の質問に回答</h3>
-                <p>直感で答えてください</p>
+                <h3>質問に回答</h3>
+                <p>直感で48問に答える</p>
               </div>
               <div className={styles.step}>
+                <span className={styles.stepNumber}>02</span>
                 <div className={styles.stepIcon}>
-                  <Image src="/images/step_2.png" alt="Type Determination" width={140} height={140} unoptimized />
+                  <Image src="/images/step_2.png" alt="Type Determination" width={120} height={120} unoptimized />
                 </div>
-                <span className={styles.stepNumber}>2</span>
                 <h3>タイプ判定</h3>
-                <p>16の投資家タイプに分類</p>
+                <p>16タイプの中から分類</p>
               </div>
               <div className={styles.step}>
+                <span className={styles.stepNumber}>03</span>
                 <div className={styles.stepIcon}>
-                  <Image src="/images/step_3.png" alt="Chart" width={140} height={140} unoptimized />
+                  <Image src="/images/step_3.png" alt="Chart" width={120} height={120} unoptimized />
                 </div>
-                <span className={styles.stepNumber}>3</span>
-                <h3>診断結果の解説</h3>
-                <p>あなたに合った特徴を解説</p>
+                <h3>診断結果</h3>
+                <p>特性とスタイルを解説</p>
               </div>
             </div>
           </MotionWrapper>

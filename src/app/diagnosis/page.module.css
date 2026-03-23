@@ -1,106 +1,118 @@
 .main {
     min-height: 100vh;
-    padding-top: var(--spacing-xl);
-    padding-bottom: var(--spacing-xl);
-    background-color: var(--color-background);
+    padding-top: var(--spacing-2xl);
+    padding-bottom: var(--spacing-2xl);
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .header {
     margin-bottom: var(--spacing-2xl);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    background: rgba(16, 16, 32, 0.4);
+    border: 1px solid var(--color-cyber-border);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
 }
 
 .progressText {
     text-align: right;
-    font-size: 0.875rem;
-    color: var(--color-text-light);
-    margin-bottom: var(--spacing-xs);
+    font-size: 0.9rem;
+    color: var(--color-cyber-cyan);
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: var(--spacing-sm);
+    text-shadow: var(--glow-cyan);
+    text-transform: uppercase;
 }
 
 .card {
-    background-color: var(--color-surface);
-    border-radius: var(--radius-lg);
-    padding: var(--spacing-2xl);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    min-height: 500px;
+    background: var(--color-cyber-dark-surface);
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--color-cyber-cyan);
+    border-radius: 12px;
+    padding: var(--spacing-3xl) var(--spacing-2xl);
+    box-shadow: var(--glow-cyan);
+    min-height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    container-type: inline-size;
+    position: relative;
+    overflow: hidden;
 }
 
-.characterImageWrapper {
-    display: flex;
-    justify-content: center;
-    margin: var(--spacing-lg) 0;
-}
-
-.characterImage {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
+.card::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, transparent 50%, var(--color-cyber-cyan) 50%);
+    opacity: 0.2;
 }
 
 .questionText {
-    font-size: min(2rem, 4.5cqw);
-    font-weight: 700;
+    font-size: clamp(1.4rem, 3.5vw, 2rem);
+    font-weight: 900;
     text-align: center;
-    color: var(--color-primary);
-    margin-top: var(--spacing-lg);
+    color: #fff;
     margin-bottom: var(--spacing-xl);
-    line-height: 1.5;
-    white-space: pre-wrap !important;
-    width: 100%;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .scaleWrapper {
     width: 100%;
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
 }
 
 .actions {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     gap: var(--spacing-md);
     margin-top: auto;
 }
 
 .nextButton {
-    min-width: 120px;
+    background: linear-gradient(90deg, var(--color-cyber-fuchsia), var(--color-cyber-violet)) !important;
+    border: none !important;
+    box-shadow: var(--glow-fuchsia) !important;
+    font-weight: 900 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nextButton:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
 }
 
 @media (max-width: 768px) {
     .card {
-        padding: var(--spacing-xl) var(--spacing-md);
-        min-height: 450px;
+        padding: var(--spacing-2xl) var(--spacing-md);
+        min-height: 400px;
     }
 
     .questionText {
-        font-size: 0.85rem;
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 1.6;
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .scaleWrapper {
-        margin: 0;
-        flex: 0 0 auto;
-        min-height: 120px;
+        font-size: 1.2rem;
+        margin-bottom: var(--spacing-lg);
     }
 
     .actions {
+        flex-direction: column;
         gap: var(--spacing-sm);
+    }
+    
+    .actions button {
+        width: 100%;
     }
 }

@@ -50,14 +50,10 @@ function ResultContent() {
 
     return (
         <main className={styles.main}>
-            {/* Cyberpunk Background Layers */}
-            <div className={styles.cyberGrid}></div>
-            <div className={styles.scanlines}></div>
-            <div className={styles.cyberGlow}></div>
-            
             <Container size="lg">
+
                 <MotionWrapper className={styles.header}>
-                    <h1 className={styles.titlePrefix}>診断結果</h1>
+                    <h1 className={styles.titlePrefix}>ANALYSIS RESULT</h1>
 
                     <div className={styles.characterImageWrapper}>
                         <Image
@@ -70,24 +66,24 @@ function ResultContent() {
                         />
                     </div>
 
-                    <h2 className={styles.typeTitle}>
+                    <div className={styles.typeTitle}>
                         <span className={styles.typeCode}>{typeCode}</span>
-                        <span className={styles.typeName}>{content.name}</span>
-                    </h2>
+                        <h2 className={styles.typeName}>{content.name}</h2>
+                    </div>
                     <p className={styles.description}>{content.description}</p>
                 </MotionWrapper>
 
                 <MotionWrapper className={styles.chartSection} delay={0.2}>
-                    <h3 className={styles.sectionTitle}>4つの投資軸</h3>
+                    <h3 className={styles.sectionTitle}>4-AXIS ANALYSIS</h3>
                     <ResultChart scores={{ s_g, i_a, l_t, d_f }} />
                 </MotionWrapper>
 
                 <MotionWrapper className={charStyles.characteristicsSection} delay={0.4}>
-                    <h3 className={styles.sectionTitle}>強みと弱み</h3>
+                    <h3 className={styles.sectionTitle}>FEATURES</h3>
                     <div className={charStyles.characteristicsGrid}>
                         <div className={charStyles.strengthBox}>
                             <h4 className={charStyles.boxTitle}>
-                                強み
+                                STRENGTHS
                             </h4>
                             <ul className={charStyles.list}>
                                 {content.strengths.map((s, i) => (
@@ -97,7 +93,7 @@ function ResultContent() {
                         </div>
                         <div className={charStyles.weaknessBox}>
                             <h4 className={charStyles.boxTitle}>
-                                弱み・注意点
+                                WEAKNESSES
                             </h4>
                             <ul className={charStyles.list}>
                                 {content.weaknesses.map((w, i) => (
@@ -109,22 +105,22 @@ function ResultContent() {
                 </MotionWrapper>
 
                 <MotionWrapper className={styles.adviceSection} delay={0.6}>
-                    <h3 className={styles.sectionTitle}>診断結果の解説</h3>
+                    <h3 className={styles.sectionTitle}>ADVICE</h3>
                     <div className={styles.adviceGrid}>
                         <div className={styles.adviceCard}>
-                            <h4>想定資産配分</h4>
+                            <h4>ALLOCATION</h4>
                             <p className={styles.highlight}>{content.advice.allocation}</p>
                         </div>
                         <div className={styles.adviceCard}>
-                            <h4>投資期間</h4>
-                            <p>{content.advice.horizon}</p>
+                            <h4>HORIZON</h4>
+                            <p className={styles.highlight}>{content.advice.horizon}</p>
                         </div>
                         <div className={styles.adviceCard}>
-                            <h4>管理スタイル</h4>
-                            <p>{content.advice.management}</p>
+                            <h4>STYLE</h4>
+                            <p className={styles.highlight}>{content.advice.management}</p>
                         </div>
                         <div className={styles.adviceCard}>
-                            <h4>該当しやすい資産カテゴリー例</h4>
+                            <h4>CATEGORIES</h4>
                             <ul className={styles.productList}>
                                 {content.advice.products.map((p, i) => (
                                     <li key={i}>{p}</li>
@@ -135,7 +131,7 @@ function ResultContent() {
 
                     <div className={styles.cautionBox}>
                         <h4>
-                            <Image src="/images/icons/weakness.png" alt="Caution" width={20} height={20} className={styles.iconInline} /> 注意点
+                            CAUTION
                         </h4>
                         <p>{content.advice.caution}</p>
                     </div>
@@ -144,7 +140,7 @@ function ResultContent() {
 
                 <MotionWrapper className={styles.servicesSection} delay={0.8}>
                     <h3 className={styles.sectionTitle}>
-                        おすすめのサービス
+                        RECOMMENDED SERVICES
                     </h3>
                     <div className={styles.servicesGrid}>
                         {content.recommendedServices.map((service, index) => (
@@ -175,7 +171,7 @@ function ResultContent() {
                 </MotionWrapper>
 
                 <MotionWrapper className={styles.actions} delay={0.9}>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', width: '100%', maxWidth: '800px', margin: '3rem auto 0' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '30px', width: '100%', maxWidth: '800px', margin: '3rem auto 0' }}>
                         <div className={styles.simulationCTA}>
                             <p className={styles.simulationLabel}>＼ 資産形成の未来を予測する ／</p>
                             <a
@@ -184,7 +180,7 @@ function ResultContent() {
                                 rel="noopener noreferrer"
                                 className={styles.simulationButton}
                             >
-                                <span>診断結果をもとに資産運用シミュレーションを試す</span>
+                                <span>運用シミュレーションを開始</span>
                             </a>
                         </div>
                         <div className={styles.tumugiCTA}>
@@ -195,19 +191,19 @@ function ResultContent() {
                                 rel="noopener noreferrer"
                                 className={styles.tumugiButton}
                             >
-                                <span>「資産を育てるつむぎ」の詳細はこちら</span>
+                                <span>「資産を育てるつむぎ」の詳細</span>
                             </a>
                         </div>
 
-                        <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
-                            <Link href="/diagnosis">
-                                <Button variant="outline">もう一度診断する</Button>
+                        <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                            <Link href="/diagnosis" style={{ flex: 1, minWidth: '200px' }}>
+                                <Button variant="outline" fullWidth>RETRY DIAGNOSIS</Button>
                             </Link>
-                            <Link href="/results">
-                                <Button variant="outline">他の結果も見る</Button>
+                            <Link href="/results" style={{ flex: 1, minWidth: '200px' }}>
+                                <Button variant="outline" fullWidth>VIEW ALL TYPES</Button>
                             </Link>
-                            <Link href="/">
-                                <Button variant="ghost">トップへ戻る</Button>
+                            <Link href="/" style={{ width: '100%' }}>
+                                <Button variant="ghost" fullWidth>BACK TO TOP</Button>
                             </Link>
                         </div>
                     </div>

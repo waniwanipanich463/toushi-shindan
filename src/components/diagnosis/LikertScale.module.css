@@ -17,105 +17,96 @@
     content: '';
     position: absolute;
     top: 50%;
-    left: 10px;
-    right: 10px;
+    left: 20px;
+    right: 20px;
     height: 2px;
-    background-color: var(--color-border);
+    background: var(--color-cyber-border);
     z-index: 0;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.1);
 }
 
 .option {
     position: relative;
-    /* z-index requires position */
     z-index: 1;
     background: transparent;
     border: none;
     padding: 10px;
-    /* Hit area */
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.2s ease;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.option:hover .circle {
-    border-color: var(--color-primary);
+.option:hover {
+    transform: scale(1.2);
 }
 
 .circle {
     display: block;
     border-radius: 50%;
-    border: 2px solid var(--color-border);
-    background-color: var(--color-surface);
-    transition: all 0.2s ease;
+    border: 2px solid var(--color-cyber-border);
+    background-color: var(--color-cyber-bg);
+    transition: all 0.3s ease;
+}
+
+/* Selected state with neon glow */
+.option.selected .circle {
+    background-color: #fff;
+    box-shadow: 0 0 20px currentColor;
+    border-color: #fff;
 }
 
 /* Custom Colors */
+.negative {
+    color: var(--color-cyber-fuchsia) !important;
+}
+
+.positive {
+    color: var(--color-cyber-cyan) !important;
+}
+
+.neutral {
+    color: var(--color-cyber-yellow) !important;
+}
+
 .negative .circle {
-    border-color: #e57373;
+    border-color: var(--color-cyber-fuchsia);
+    box-shadow: inset 0 0 5px rgba(255, 0, 255, 0.2);
 }
 
-/* Red-ish */
 .positive .circle {
-    border-color: var(--color-secondary);
+    border-color: var(--color-cyber-cyan);
+    box-shadow: inset 0 0 5px rgba(0, 255, 255, 0.2);
 }
 
-/* Teal */
 .neutral .circle {
-    border-color: var(--color-text-light);
+    border-color: var(--color-cyber-yellow);
+    box-shadow: inset 0 0 5px rgba(255, 215, 0, 0.2);
 }
 
-.option.selected .circle {
-    background-color: currentColor;
-    transform: scale(1.2);
+.option:hover .circle {
+    border-color: #fff;
+    box-shadow: 0 0 15px currentColor;
 }
-
-.negative.selected {
-    color: #e57373;
-}
-
-.positive.selected {
-    color: var(--color-secondary);
-}
-
-.neutral.selected {
-    color: var(--color-text-light);
-}
-
 
 /* Sizes */
-.lg .circle {
-    width: 32px;
-    height: 32px;
-}
-
-.md .circle {
-    width: 24px;
-    height: 24px;
-}
-
-.sm .circle {
-    width: 18px;
-    height: 18px;
-}
-
-.xs .circle {
-    width: 14px;
-    height: 14px;
-}
-
+.lg .circle { width: 36px; height: 36px; }
+.md .circle { width: 28px; height: 28px; }
+.sm .circle { width: 22px; height: 22px; }
+.xs .circle { width: 16px; height: 16px; }
 
 .labels {
     display: flex;
     justify-content: space-between;
-    font-size: 0.875rem;
-    color: var(--color-text-light);
-    font-weight: 500;
-    margin-top: var(--spacing-xs);
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 700;
+    margin-top: var(--spacing-sm);
     width: 100%;
-    /* optionsと同じ余白を持たせる */
     padding: 0 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .labels span {
@@ -123,14 +114,6 @@
     text-align: center;
 }
 
-.labelNegative {
-    text-align: left !important;
-}
-
-.labelPositive {
-    text-align: right !important;
-}
-
-.labelNeutral {
-    text-align: center !important;
-}
+.labelNegative { text-align: left !important; color: var(--color-cyber-fuchsia); }
+.labelPositive { text-align: right !important; color: var(--color-cyber-cyan); }
+.labelNeutral { text-align: center !important; color: var(--color-cyber-yellow); }

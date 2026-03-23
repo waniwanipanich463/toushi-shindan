@@ -57,6 +57,9 @@ export default function RootLayout({
         `}
       </Script>
       <body className={`${notoSansJP.variable} ${inter.variable} antialiased`}>
+        <div className="cyberGrid" />
+        <div className="cyberGlow" />
+        <div className="scanlines" />
         <ClientLoadingWrapper>
           <Header />
           {children}

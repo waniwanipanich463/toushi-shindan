@@ -19,7 +19,10 @@ export const Header: React.FC = () => {
                             className={styles.logoImage}
                         />
                     </div>
-                    <span className={styles.logoText}>つむぎの投資診断</span>
+                    <div className={styles.logoTextWrapper}>
+                        <span className={`${styles.logoText} ${styles.glitch}`} data-text="つむぎの投資診断">つむぎの投資診断</span>
+                        <span className={styles.logoSubText}>INVESTMENT DIAGNOSIS</span>
+                    </div>
                 </Link>
 
                 <nav className={styles.nav}>

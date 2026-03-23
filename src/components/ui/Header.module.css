@@ -1,12 +1,26 @@
 .header {
-    background-color: var(--color-surface);
-    border-bottom: 1px solid var(--color-border);
+    background: rgba(10, 10, 26, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid var(--color-cyber-cyan);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
     position: sticky;
     top: 0;
     z-index: 100;
-    height: 64px;
+    height: 80px;
     display: flex;
     align-items: center;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: var(--color-cyber-fuchsia);
+    box-shadow: var(--glow-fuchsia);
+    opacity: 0.5;
 }
 
 .container {
@@ -20,27 +34,80 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: var(--color-heading);
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
 }
 
 .logoImageWrapper {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: #fff;
-    border: 1px solid var(--color-border);
+    width: 48px;
+    height: 48px;
+    background: rgba(0, 255, 255, 0.05);
+    border: 1px solid var(--color-cyber-cyan);
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: var(--glow-cyan);
+    clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%);
 }
 
 .logoImage {
     width: auto;
-    height: 40px;
+    height: 38px;
+    filter: drop-shadow(0 0 5px var(--color-cyber-cyan));
+}
+
+.logoTextWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoText {
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px var(--color-cyber-cyan);
+    position: relative;
+}
+
+.logoSubText {
+    font-size: 0.6rem;
+    color: var(--color-cyber-fuchsia);
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-top: -4px;
+}
+
+/* Glitch Effect */
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.glitch:hover::before {
+    animation: glitch-anim 0.2s infinite;
+    color: var(--color-cyber-fuchsia);
+    z-index: -1;
+}
+
+.glitch:hover::after {
+    animation: glitch-anim 0.3s infinite reverse;
+    color: var(--color-cyber-cyan);
+    z-index: -2;
+}
+
+@keyframes glitch-anim {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 1px); }
+    40% { transform: translate(-2px, -1px); }
+    60% { transform: translate(2px, 1px); }
+    80% { transform: translate(2px, -1px); }
+    100% { transform: translate(0); }
 }
 
 .nav {
@@ -50,14 +117,17 @@
 }
 
 .navLink {
-    color: var(--color-text-light);
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: color var(--transition-fast);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
 .navLink:hover {
-    color: var(--color-primary);
+    color: var(--color-cyber-cyan);
+    text-shadow: 0 0 8px var(--color-cyber-cyan);
 }
 
 @media (max-width: 640px) {
