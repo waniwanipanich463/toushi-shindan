@@ -8,14 +8,19 @@
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
-  height: 60vh;
-  min-height: 400px;
-  max-height: 600px;
+  /* Header height = 80px. Setting min-height accordingly */
+  height: calc(85vh - 80px);
+  min-height: 480px;
+  max-height: 800px;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Top padding to stay below sticky header if needed, 
+     but since header is sticky, we just need the hero to start below it.
+  */
+  margin-top: 0;
 }
 
 .videoBackgroundWrapper {
@@ -25,13 +30,21 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+  background: #000;
 }
 
 .videoBackground {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  filter: brightness(0.7) contrast(1.1);
+  /* Using object-fit: contain or cover with specific focal point.
+     The user wants "full top, bottom, left, right to be visible".
+     'contain' will ensure full visibility but may leave bars.
+     'cover' will crop. Let's try 'contain' first or a very generous 'cover'.
+     If they want NO bars and NO cropping, standard aspect ratio video is needed.
+     I'll use 'contain' to honor "all four edges" request.
+  */
+  object-fit: contain;
+  filter: brightness(0.8) contrast(1.1);
 }
 
 .heroOverlay {
@@ -40,45 +53,63 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(10, 10, 20, 0.4), rgba(10, 10, 20, 0.2) 50%, rgba(10, 10, 20, 0.8));
+  /* subtle overlay */
+  background: radial-gradient(circle at center, transparent 0%, rgba(10, 10, 20, 0.4) 100%);
   z-index: 0;
+  pointer-events: none;
 }
 
 .heroTitleContainer {
   position: relative;
-  z-index: 1;
+  z-index: 10;
   text-align: center;
+  width: 90%;
+  max-width: 800px;
 }
 
-.titleBurst {
-  font-size: clamp(2.5rem, 10vw, 5.5rem);
-  font-weight: 900;
-  color: var(--color-cyber-fuchsia);
-  text-shadow: 0 0 20px rgba(255, 0, 255, 0.7), 0 0 40px rgba(255, 0, 255, 0.4);
-  margin: 0;
-  letter-spacing: -2px;
-  line-height: 1;
+.titleGlitchWrapper {
+  position: relative;
+  display: inline-block;
   opacity: 0;
-  filter: blur(20px);
-  transform: scale(0.6);
-  animation: buwaat 1s cubic-bezier(0.2, 0, 0.2, 1) forwards 0.3s;
+  animation: buwaat 0.8s cubic-bezier(0.2, 0, 0.2, 1) forwards 0.3s,
+             glitch-image 4s infinite 1.5s;
+}
+
+.titleImage {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 15px rgba(255, 0, 255, 0.4));
+}
+
+@keyframes glitch-image {
+  0%, 92%, 100% {
+    transform: translate(0);
+    filter: drop-shadow(0 0 15px rgba(255, 0, 255, 0.4));
+  }
+  93% {
+    transform: translate(-3px, 2px);
+    filter: drop-shadow(2px 0 0 #ff00ff) drop-shadow(-2px 0 0 #00ffff);
+  }
+  95% {
+    transform: translate(3px, -2px);
+    filter: drop-shadow(-2px 0 0 #ff00ff) drop-shadow(2px 0 0 #00ffff);
+  }
+  97% {
+    transform: translate(-1px, 1px);
+    filter: none;
+  }
 }
 
 @keyframes buwaat {
   0% {
     opacity: 0;
+    transform: scale(0.6) translateY(20px);
     filter: blur(20px);
-    transform: scale(0.6);
-  }
-  40% {
-    opacity: 1;
-    filter: blur(5px);
-    transform: scale(1.1);
   }
   100% {
     opacity: 1;
+    transform: scale(1) translateY(0);
     filter: blur(0);
-    transform: scale(1);
   }
 }
 
