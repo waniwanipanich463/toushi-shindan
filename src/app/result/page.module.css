@@ -184,7 +184,6 @@
 .serviceCard:hover {
     border-color: var(--color-cyber-fuchsia);
     box-shadow: var(--glow-fuchsia);
-    transform: scale(1.02);
 }
 
 /* Stretched Link Implementation */
