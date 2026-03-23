@@ -8,7 +8,7 @@ import styles from './page.module.css';
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Container className={styles.hero}>
+      <section className={styles.heroFull}>
         <div className={styles.videoBackgroundWrapper}>
           <video
             src="/shindan_hero_clip.mp4"
@@ -20,20 +20,23 @@ export default function Home() {
           />
           <div className={styles.heroOverlay} />
         </div>
+        <div className={styles.heroTitleContainer}>
+          <h1 className={styles.titleBurst}>
+            つむぎの投資診断
+          </h1>
+        </div>
+      </section>
 
-        <MotionWrapper className={styles.heroContent}>
-          <div className={styles.titleWrapper}>
-            <span className={styles.subtitle}>4軸×2＝16タイプで分析</span>
-            <h1 className={styles.titleBurst}>
-              つむぎの投資診断
-            </h1>
+      <Container className={styles.heroDescriptionSection}>
+        <MotionWrapper className={styles.heroContentBelow} delay={1.2}>
+          <div className={styles.subtitleWrapper}>
+            <span className={styles.subtitleUnder}>4軸×2＝16タイプで分析</span>
           </div>
-          <p className={styles.description}>
+          <p className={styles.descriptionUnder}>
             性格や価値観から、あなたに合いやすい投資スタイル（長期・積立・分散など）の傾向を分析します。
             特定銘柄を推奨するものではなく、自分を知るための診断ツールです。
           </p>
-
-          <div className={styles.actions}>
+          <div className={styles.actionsUnder}>
             <Link href="/diagnosis" style={{ width: '100%', display: 'flex', justifyContent: 'center', textDecoration: 'none' }}>
               <div className={`${styles.ctaImageContainer} glitch`}>
                 <Image

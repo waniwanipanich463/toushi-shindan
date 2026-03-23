@@ -34,7 +34,6 @@ export const metadata: Metadata = {
 
 import { Header } from "@/components/ui/Header";
 import { Footer } from "@/components/ui/Footer";
-import { ClientLoadingWrapper } from "@/components/ui/ClientLoadingWrapper";
 
 export default function RootLayout({
   children,
@@ -60,11 +59,9 @@ export default function RootLayout({
         <div className="cyberGrid" />
         <div className="cyberGlow" />
         <div className="scanlines" />
-        <ClientLoadingWrapper>
-          <Header />
-          {children}
-          <Footer />
-        </ClientLoadingWrapper>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );
