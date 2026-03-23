@@ -3,22 +3,29 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Container } from '@/components/ui/Container';
 import { MotionWrapper } from '@/components/ui/MotionWrapper';
-import { DissolveText } from '@/components/ui/DissolveText';
 import styles from './page.module.css';
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <Container className={styles.hero}>
+        <div className={styles.videoBackgroundWrapper}>
+          <video
+            src="/shindan_hero_clip.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className={styles.videoBackground}
+          />
+          <div className={styles.heroOverlay} />
+        </div>
+
         <MotionWrapper className={styles.heroContent}>
-          <div className={styles.title}>
+          <div className={styles.titleWrapper}>
             <span className={styles.subtitle}>4軸×2＝16タイプで分析</span>
-            <h1 className={styles.titleMain}>
-              <DissolveText text="あなたの" delay={0.5} />
-              <span className={styles.highlight}>
-                <DissolveText text="投資スタイル" delay={0.9} />
-              </span>
-              <DissolveText text="を診断" delay={1.5} />
+            <h1 className={styles.titleBurst}>
+              つむぎの投資診断
             </h1>
           </div>
           <p className={styles.description}>
@@ -49,18 +56,6 @@ export default function Home() {
               </div>
             </Link>
             <p className={styles.note}>TIME: APPROX 3 MIN / NO REGISTRATION</p>
-          </div>
-        </MotionWrapper>
-        <MotionWrapper className={styles.heroImageWrapper} delay={0.2}>
-          <div className={styles.imageGlowEffect}>
-            <Image
-              src="/images/hero_new.png"
-              alt="Investment Analysis"
-              width={600}
-              height={600}
-              priority
-              className={styles.heroImage}
-            />
           </div>
         </MotionWrapper>
       </Container>
