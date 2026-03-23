@@ -176,12 +176,27 @@
     border-radius: 12px;
     padding: var(--spacing-2xl);
     transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .serviceCard:hover {
     border-color: var(--color-cyber-fuchsia);
     box-shadow: var(--glow-fuchsia);
     transform: scale(1.02);
+}
+
+/* Stretched Link Implementation */
+.affiliateTag a::after,
+.serviceLink::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .serviceName {
@@ -204,6 +219,13 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.9rem;
+    position: relative;
+    z-index: 2;
+}
+
+.affiliateTag {
+    position: relative;
+    z-index: 2;
 }
 
 .simulationCTA, .tumugiCTA {
