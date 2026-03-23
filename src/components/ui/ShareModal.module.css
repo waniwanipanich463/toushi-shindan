@@ -15,14 +15,15 @@
 }
 
 .modal {
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--color-cyber-dark-surface);
+    backdrop-filter: blur(15px);
     border-radius: var(--radius-xl);
     padding: var(--spacing-2xl);
     width: 100%;
     max-width: 450px;
     position: relative;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.2);
+    border: 1px solid var(--color-cyber-fuchsia);
     cursor: default;
     text-align: center;
 }
@@ -33,27 +34,33 @@
     right: var(--spacing-md);
     background: none;
     border: none;
-    color: var(--color-text-secondary);
+    color: var(--color-cyber-fuchsia);
     cursor: pointer;
     padding: var(--spacing-xs);
     border-radius: var(--radius-full);
     transition: background 0.2s;
+    opacity: 0.8;
 }
 
 .closeButton:hover {
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(255, 0, 255, 0.1);
+    opacity: 1;
 }
 
 .title {
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--color-primary);
+    color: var(--color-cyber-fuchsia);
     margin-bottom: var(--spacing-xs);
+    text-shadow: var(--glow-fuchsia);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .subtitle {
     font-size: 0.95rem;
-    color: var(--color-text-secondary);
+    color: var(--color-cyber-fuchsia);
+    opacity: 0.9;
     margin-bottom: var(--spacing-xl);
 }
 
