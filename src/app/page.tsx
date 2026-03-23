@@ -21,7 +21,7 @@ export default function Home() {
           <div className={styles.heroOverlay} />
         </div>
         <div className={styles.heroTitleContainer}>
-          <div className={`${styles.titleGlitchWrapper} glitch`} data-text="つむぎの投資診断">
+          <div className={styles.titleGlitchWrapper} data-text="つむぎの投資診断">
             <Image
               src="/title.png"
               alt="つむぎの投資診断"
