@@ -39,7 +39,6 @@ export default function Home() {
                 <div className={styles.ctaGlow} />
               </div>
             </Link>
-            <p className={styles.note}>TIME: APPROX 3 MIN / NO REGISTRATION</p>
           </div>
         </div>
       </section>

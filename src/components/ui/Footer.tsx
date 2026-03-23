@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
                         投資の最終決定は、ご自身の判断と責任において行っていただけますようお願いいたします。
                     </p>
                     <p className={styles.copyright}>
-                        &copy; {new Date().getFullYear()} toushi-shindan. All rights reserved.
+                        &copy; {new Date().getFullYear()} つむぎ部屋
                     </p>
                 </div>
             </Container>
