@@ -45,24 +45,9 @@ export default function Home() {
           </p>
           <div className={styles.actionsUnder}>
             <Link href="/diagnosis" style={{ width: '100%', display: 'flex', justifyContent: 'center', textDecoration: 'none' }}>
-              <div className={`${styles.ctaImageContainer} glitch`}>
-                <Image
-                  src="/images/btn_start_default.png"
-                  alt="診断を始める (無料)"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 320px"
-                  priority
-                  className={styles.ctaImageDefault}
-                />
-                <Image
-                  src="/images/btn_start_hover.png"
-                  alt="診断を始める (無料) - ホバー"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 320px"
-                  priority
-                  className={styles.ctaImageHover}
-                  aria-hidden="true"
-                />
+              <div className={styles.ctaButton}>
+                <span className={styles.ctaText}>診断を始める</span>
+                <div className={styles.ctaGlow} />
               </div>
             </Link>
             <p className={styles.note}>TIME: APPROX 3 MIN / NO REGISTRATION</p>

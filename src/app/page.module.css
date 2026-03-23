@@ -181,49 +181,73 @@
   }
 }
 
-.ctaImageContainer {
+.ctaButton {
   position: relative;
-  width: 100%;
-  max-width: 400px;
-  aspect-ratio: 1024 / 434;
+  padding: 1.2rem 4rem;
+  background: rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 2px solid var(--color-cyber-cyan);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.3));
+  clip-path: polygon(10% 0, 100% 0, 100% 75%, 90% 100%, 0 100%, 0 25%);
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 15px rgba(0, 255, 255, 0.2), 
+              0 0 15px rgba(0, 255, 255, 0.3);
+  overflow: hidden;
 }
 
-.ctaImageContainer:hover {
-  transform: scale(1.05) translateY(-5px);
-  filter: drop-shadow(0 0 20px rgba(255, 0, 255, 0.5));
+.ctaButton:hover {
+  background: rgba(0, 255, 255, 0.2);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.6), 
+              inset 0 0 20px rgba(0, 255, 255, 0.4);
+  filter: brightness(1.2);
 }
 
-.ctaImageDefault,
-.ctaImageHover {
+.ctaButton:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+.ctaText {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.ctaGlow {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  transition: opacity 0.3s ease;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: 0.5s;
+  z-index: 1;
 }
 
-.ctaImageHover {
-  opacity: 0;
-}
-
-.ctaImageContainer:hover .ctaImageDefault {
-  opacity: 0;
-}
-
-.ctaImageContainer:hover .ctaImageHover {
-  opacity: 1;
+.ctaButton:hover .ctaGlow {
+  left: 100%;
+  transition: 0.6s;
 }
 
 .note {
   font-size: 0.9rem;
   color: var(--color-cyber-cyan);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
+  margin-top: var(--spacing-sm);
 }
 
 .features {
