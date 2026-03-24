@@ -40,8 +40,14 @@
     box-shadow: var(--glow-cyan);
 }
 
+@media (max-width: 768px) {
+    .card {
+        padding: var(--spacing-2xl) var(--spacing-md);
+    }
+}
+
 .section {
-    margin-bottom: var(--spacing-3xl);
+    margin-bottom: var(--spacing-2xl);
 }
 
 .section:last-child {
