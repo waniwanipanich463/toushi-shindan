@@ -31,6 +31,14 @@
     text-shadow: var(--glow-cyan);
 }
 
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        margin-bottom: var(--spacing-xl);
+    }
+}
+
 .card {
     background: var(--color-cyber-dark-surface);
     backdrop-filter: blur(15px);
@@ -66,9 +74,23 @@
     text-shadow: var(--glow-cyan);
 }
 
+@media (max-width: 480px) {
+    .sectionTitle {
+        font-size: 1.2rem;
+        margin-bottom: var(--spacing-md);
+    }
+}
+
 .text {
     font-size: 1rem;
     line-height: 2;
     color: rgba(255, 255, 255, 0.85);
     white-space: pre-wrap;
+}
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
 }
