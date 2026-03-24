@@ -103,8 +103,9 @@
     }
 
     .questionText {
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-bottom: var(--spacing-lg);
+        padding: 0 var(--spacing-xs);
     }
 
     .actions {
