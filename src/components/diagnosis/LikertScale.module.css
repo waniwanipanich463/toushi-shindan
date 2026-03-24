@@ -10,6 +10,7 @@
     align-items: center;
     margin-bottom: var(--spacing-sm);
     position: relative;
+    padding: 0 10px; /* Match labels padding to align centers */
 }
 
 /* Connecting line */
@@ -30,12 +31,18 @@
     z-index: 1;
     background: transparent;
     border: none;
-    padding: 10px;
+    padding: 8px; /* Slightly reduced padding */
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media (max-width: 480px) {
+    .option {
+        padding: 4px; /* Even smaller padding on mobile to save space */
+    }
 }
 
 .option:hover {
@@ -96,6 +103,13 @@
 .sm .circle { width: 22px; height: 22px; }
 .xs .circle { width: 16px; height: 16px; }
 
+@media (max-width: 480px) {
+    .lg .circle { width: 32px; height: 32px; }
+    .md .circle { width: 24px; height: 24px; }
+    .sm .circle { width: 18px; height: 18px; }
+    .xs .circle { width: 14px; height: 14px; }
+}
+
 .labels {
     display: flex;
     justify-content: space-between;
@@ -104,9 +118,14 @@
     font-weight: 700;
     margin-top: var(--spacing-sm);
     width: 100%;
-    padding: 0 10px;
+    padding: 0 10px; /* Same padding as .options for alignment */
     letter-spacing: 1px;
-    text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+    .labels {
+        font-size: 0.7rem;
+    }
 }
 
 .labels span {
@@ -114,6 +133,17 @@
     text-align: center;
 }
 
-.labelNegative { text-align: left !important; color: var(--color-cyber-fuchsia); }
-.labelPositive { text-align: right !important; color: var(--color-cyber-cyan); }
-.labelNeutral { text-align: center !important; color: var(--color-cyber-yellow); }
+.labelNegative { 
+    text-align: left !important; 
+    color: var(--color-cyber-fuchsia) !important; 
+}
+
+.labelPositive { 
+    text-align: right !important; 
+    color: var(--color-cyber-cyan) !important; 
+}
+
+.labelNeutral { 
+    text-align: center !important; 
+    color: var(--color-cyber-yellow) !important; 
+}
