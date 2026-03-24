@@ -33,8 +33,8 @@
 
 @media (max-width: 480px) {
     .title {
-        font-size: 1.5rem;
-        letter-spacing: 2px;
+        font-size: 1.25rem; /* Reduced further to ensure 1-line display */
+        letter-spacing: 1px; /* Reduced letter-spacing for narrow screens */
         margin-bottom: var(--spacing-xl);
     }
 }
@@ -76,7 +76,7 @@
 
 @media (max-width: 480px) {
     .sectionTitle {
-        font-size: 1.2rem;
+        font-size: 1.1rem; /* Reduced slightly more */
         margin-bottom: var(--spacing-md);
     }
 }
@@ -90,7 +90,7 @@
 
 @media (max-width: 480px) {
     .text {
-        font-size: 0.9rem;
+        font-size: 0.85rem; /* Reduced slightly more */
         line-height: 1.8;
     }
 }
