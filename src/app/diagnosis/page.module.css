@@ -103,8 +103,9 @@
     }
 
     .questionText {
-        font-size: 0.9rem;
-        margin-bottom: var(--spacing-lg);
+        font-size: 0.8rem;
+        margin-top: 0;
+        margin-bottom: var(--spacing-md);
         padding: 0 var(--spacing-xs);
     }
 
