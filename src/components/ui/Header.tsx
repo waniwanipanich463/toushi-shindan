@@ -26,6 +26,14 @@ export const Header: React.FC = () => {
                 </Link>
 
                 <nav className={styles.nav}>
+                    <a
+                        href="https://tumugi-lp.vercel.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.lpButton}
+                    >
+                        資産を育てるつむぎを見る
+                    </a>
                 </nav>
             </Container>
         </header>
