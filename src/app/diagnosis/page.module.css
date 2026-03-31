@@ -103,10 +103,15 @@
     }
 
     .questionText {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         margin-top: 0;
         margin-bottom: var(--spacing-md);
         padding: 0 var(--spacing-xs);
+    }
+
+    .scaleWrapper {
+        flex: 1;
+        margin-bottom: 0;
     }
 
     .actions {
