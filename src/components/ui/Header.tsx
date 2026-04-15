@@ -32,7 +32,7 @@ export const Header: React.FC = () => {
                         rel="noopener noreferrer"
                         className={styles.lpButton}
                     >
-                        資産を育てるつむぎを見る
+                        100歳まで安心するための“出口戦略”を今すぐ受け取る
                     </a>
                 </nav>
             </Container>

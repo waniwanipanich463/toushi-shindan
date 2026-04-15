@@ -193,7 +193,7 @@ function ResultContent() {
                                 rel="noopener noreferrer"
                                 className={styles.tumugiButton}
                             >
-                                <span>資産を育てるつむぎを見る</span>
+                                <span>100歳まで安心するための“出口戦略”を今すぐ受け取る</span>
                             </a>
                         </div>
                         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
