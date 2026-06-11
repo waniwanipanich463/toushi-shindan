@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Container } from './Container';
-import { Button } from './Button';
 import styles from './Header.module.css';
 
 export const Header: React.FC = () => {

@@ -1,7 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
-import { Button } from '@/components/ui/Button';
+import React, { useState } from 'react';
 import { ShareModal } from './ShareModal';
 import styles from './ShareButtons.module.css';
 

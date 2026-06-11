@@ -33,12 +33,6 @@ export default function DiagnosisPage() {
         }, 300);
     };
 
-    const handleNext = () => {
-        if (currentIndex < totalQuestions - 1) {
-            setCurrentIndex((prev) => prev + 1);
-        }
-    };
-
     const handleBack = () => {
         if (currentIndex > 0) {
             setCurrentIndex((prev) => prev - 1);
