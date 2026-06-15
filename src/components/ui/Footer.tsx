@@ -21,14 +21,6 @@ export const Footer: React.FC = () => {
                     </p>
                 </div>
             </Container>
-            <a
-                href="https://shota-world.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.designerLink}
-            >
-                Designed by Shota Niwano
-            </a>
         </footer>
     );
 };
