@@ -21,11 +21,11 @@ export default function AboutPage() {
                             <tbody>
                                 <tr>
                                     <th>運営者名</th>
-                                    <td>つむぎ部屋</td>
+                                    <td>〇〇</td>
                                 </tr>
                                 <tr>
                                     <th>お問い合わせ</th>
-                                    <td>money.revenge001@gmail.com</td>
+                                    <td>〇〇</td>
                                 </tr>
                                 <tr>
                                     <th>サイトURL</th>

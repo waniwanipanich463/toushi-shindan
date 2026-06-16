@@ -91,7 +91,8 @@ export default function PrivacyPage() {
                         <h2 className={styles.sectionTitle}>8. 個人情報の開示・訂正・削除</h2>
                         <p className={styles.text}>
                             ご本人からの個人情報の開示・訂正・削除のご請求があった場合、適切に対応いたします。{"\n"}
-                            お問い合わせ先：example@example.com
+                            運営者：〇〇{"\n"}
+                            お問い合わせ先：〇〇
                         </p>
                     </section>
 

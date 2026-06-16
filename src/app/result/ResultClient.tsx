@@ -138,40 +138,6 @@ function ResultContent() {
                     <ShareButtons typeCode={typeCode} typeName={content.name} />
                 </MotionWrapper>
 
-                <MotionWrapper className={styles.servicesSection} delay={0.8}>
-                    <h3 className={styles.sectionTitle}>
-                        RECOMMENDED SERVICES
-                    </h3>
-                    <div className={styles.servicesGrid}>
-                        {content.recommendedServices.map((service, index) => (
-                            <div key={index} className={styles.serviceCard}>
-                                {service.affiliateHtml ? (
-                                    <div className={styles.affiliateWrapper}>
-                                        <h4 className={styles.serviceName}>{service.name}</h4>
-                                        <p className={styles.serviceDesc}>{service.description}</p>
-                                        <div
-                                            className={styles.affiliateTag}
-                                            dangerouslySetInnerHTML={{ __html: service.affiliateHtml }}
-                                        />
-                                    </div>
-                                ) : (
-                                    <>
-                                        <h4 className={styles.serviceName}>{service.name}</h4>
-                                        <p className={styles.serviceDesc}>{service.description}</p>
-                                        {service.url && (
-                                            <div className={styles.affiliateTag}>
-                                                <a href={service.url} target="_blank" rel="noopener noreferrer" className={styles.serviceLink}>
-                                                    公式サイトを見る →
-                                                </a>
-                                            </div>
-                                        )}
-                                    </>
-                                )}
-                            </div>
-                        ))}
-                    </div>
-                </MotionWrapper>
-
                 <MotionWrapper className={styles.actions} delay={0.9}>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '30px', width: '100%', maxWidth: '800px', margin: '3rem auto 0' }}>
                         <div className={styles.simulationCTA}>

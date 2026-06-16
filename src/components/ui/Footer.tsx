@@ -16,9 +16,6 @@ export const Footer: React.FC = () => {
                         免責事項：本診断結果は一般的な情報提供のみを目的としており、特定の金融商品の売買を勧誘するものではありません。
                         投資の最終決定は、ご自身の判断と責任において行っていただけますようお願いいたします。
                     </p>
-                    <p className={styles.copyright}>
-                        &copy; {new Date().getFullYear()} つむぎ部屋
-                    </p>
                 </div>
             </Container>
         </footer>
