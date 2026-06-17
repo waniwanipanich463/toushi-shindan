@@ -24,16 +24,7 @@ export const Header: React.FC = () => {
                     </div>
                 </Link>
 
-                <nav className={styles.nav}>
-                    <a
-                        href="https://tumugi-lp.vercel.app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.lpButton}
-                    >
-                        100歳まで安心するための“出口戦略”を今すぐ受け取る
-                    </a>
-                </nav>
+
             </Container>
         </header>
     );
